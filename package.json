@@ -44,11 +44,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yun520-1/mark-heartflow-skill.git"
+    "url": "git+https://github.com/yun520-1/mark-heartflow-claw.git"
   },
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/yun520-1/mark-heartflow-skill/issues"
+    "url": "https://github.com/yun520-1/mark-heartflow-claw/issues"
   },
-  "homepage": "https://github.com/yun520-1/mark-heartflow-skill#readme"
+  "homepage": "https://github.com/yun520-1/mark-heartflow-claw#readme"
 }

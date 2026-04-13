@@ -10,7 +10,7 @@
 # 4. 更新理论数据库
 # 5. 生成升级报告
 
-SCRIPT_DIR="/Users/apple/mark-heartflow-skill-new"
+SCRIPT_DIR="/Users/apple/mark-heartflow-claw"
 LOG_DIR="$SCRIPT_DIR/logs"
 TIMESTAMP=$(date +%Y%m%d%H%M%S)
 

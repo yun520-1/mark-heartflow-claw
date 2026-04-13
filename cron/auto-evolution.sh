@@ -10,7 +10,7 @@
 # - 无我而利他
 # - 自然流露，非刻意追求
 
-PROJECT_DIR="/Users/apple/mark-heartflow-skill-new"
+PROJECT_DIR="/Users/apple/mark-heartflow-claw"
 NODE_PATH="/opt/homebrew/bin/node"
 cd "$PROJECT_DIR"
 

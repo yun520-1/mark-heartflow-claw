@@ -9,7 +9,7 @@
 # - 真善美为唯一标准
 # - 无我而利他
 
-PROJECT_DIR="/Users/apple/mark-heartflow-skill-new"
+PROJECT_DIR="/Users/apple/mark-heartflow-claw"
 NODE_PATH="/opt/homebrew/bin/node"
 cd "$PROJECT_DIR"
 

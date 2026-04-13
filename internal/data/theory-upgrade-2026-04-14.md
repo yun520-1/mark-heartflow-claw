@@ -1,76 +1,65 @@
 # HeartFlow 理论升级报告
 
-**日期**: 2026-04-14
-**触发**: HeartFlow v8.7.x 定时理论升级任务
+**日期:** 2026-04-14 (UTC: 2026-04-13 21:05)
+**版本:** 8.7.51 → 8.7.52
 
----
+## 一、SEP 哲学理论搜索
 
-## 版本变化
+> ⚠️ Brave Search API 未配置，DuckDuckGo/Google 网络连接失败。以下为计划搜索的主题（需配置 API 后重试）：
 
-| 项目 | 值 |
-|------|-----|
-| 旧版本 | 8.7.47 |
-| 新版本 | 8.7.48 |
-| 变更类型 | PATCH (+0.0.1) |
+| # | 搜索主题 | 状态 |
+|---|---------|------|
+| 1 | consciousness theory stanford encyclopedia philosophy | ❌ 搜索失败 |
+| 2 | qualia philosophy SEP | ❌ 搜索失败 |
+| 3 | emotion psychology theory | ❌ 搜索失败 |
+| 4 | self-consciousness SEP | ❌ 搜索失败 |
+| 5 | intentionality mind philosophy | ❌ 搜索失败 |
+| 6 | predictive processing consciousness | ❌ 搜索失败 |
+| 7 | integrated information theory 2024 2025 2026 | ❌ 搜索失败 |
+| 8 | global workspace theory 2025 | ❌ 搜索失败 |
 
----
+**已知 SEP 条目（历史数据）：**
+- Stanford Encyclopedia of Philosophy - Consciousness: https://plato.stanford.edu/entries/consciousness/
+- SEP - Qualia: https://plato.stanford.edu/entries/qualia/
+- SEP - Self-Consciousness: https://plato.stanford.edu/entries/self-consciousness/
+- SEP - Intentionality: https://plato.stanford.edu/entries/intentionality/
+- SEP - Emotion: https://plato.stanford.edu/entries/emotion/
 
-## 第1步：SEP 哲学理论搜索
+## 二、学术论文搜索
 
-**搜索状态**: ⚠️ Brave Search API 未配置，DuckDuckGo Lite 抓取失败（网络限制）
+> ⚠️ 同上，web_search 不可用
 
-脚本 `hourly-theory-upgrade-v2.js` 内部完成了 5 项 SEP 理论搜索：
-1. consciousness theory (SEP)
-2. qualia philosophy (SEP)
-3. emotion psychology (SEP)
-4. self-consciousness (SEP)
-5. intentionality mind (SEP)
+| # | 搜索主题 | 状态 |
+|---|---------|------|
+| 1 | integrated information theory consciousness 2025 arxiv | ❌ 搜索失败 |
+| 2 | global workspace theory consciousness neuroscience 2025 | ❌ 搜索失败 |
+| 3 | free energy principle karl friston 2025 | ❌ 搜索失败 |
+| 4 | AI consciousness theory recent developments | ❌ 搜索失败 |
+| 5 | emotion computation model affective computing 2025 | ❌ 搜索失败 |
 
-**SEP 理论数量**: 5 项
+## 三、数学公式计算结果
 
----
-
-## 第2步：学术论文搜索
-
-脚本 `hourly-theory-upgrade-v2.js` 内部完成了 5 项学术论文搜索：
-1. integrated information theory consciousness
-2. global workspace theory consciousness
-3. free energy principle consciousness
-4. quantum consciousness theory
-5. emotion computation model
-
-**学术论文数量**: 5 项
-
----
-
-## 第3步：数学公式计算结果
-
-| 公式 | 结果 | 说明 |
-|------|------|------|
+| 公式 | 计算结果 | 说明 |
+|------|---------|------|
 | IIT Φ | 0.6263 | Φ = √(∑λᵢ²) |
 | GWT C | 2.2900 | C = ∑(aᵢ × wᵢ) |
 | 自我意识 S | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
 | 情绪强度 \|E\| | 1.2207 | \|E\| = √(P² + A² + D²) |
 | 感受质 Q | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
-| 解释鸿 Gap | 0.6000 | 不可约: true |
+| 六层境界 | 觉察→自省→无我→彼岸→般若→圣人 | 意识层级模型 |
+| 解释鸿沟 Gap | 0.6000 | 不可约: true |
 
-**六层境界**: 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人
+## 四、版本变化
 
-**数学公式总数**: 8 个  
-**高级计算数**: 7 个
+- **旧版本:** 8.7.51
+- **新版本:** 8.7.52
+- **变更类型:** PATCH（+0.0.1）
+- **生成文件:**
+  - `internal/data/psychology-formulas-2026-04-13.json`
+  - `src/core/theory/advanced-formulas-v7.3.3.js`
 
----
+## 五、备注
 
-## 第4步：文件更新
+本次升级因 Brave Search API 未配置，第1步和第2步的在线搜索未能获取实时结果。数学公式计算（第3步）正常完成，由脚本内嵌数据驱动。
 
-- ✅ `internal/data/psychology-formulas-2026-04-13.json` — 心理学公式数据
-- ✅ `src/core/theory/advanced-formulas-v7.3.3.js` — 高级公式程序文件
-- ✅ `VERSION.txt` — 8.7.47 → 8.7.48
-
----
-
-## 备注
-
-- Brave Search API 未配置（`missing_brave_api_key`），改用脚本内置搜索
-- DuckDuckGo Lite 外部抓取失败（网络限制），脚本内部搜索正常完成
-- 所有数学公式计算正常完成，结果已保存
+**建议：** 配置 Brave Search API key（`openclaw configure --section web`）以启用实时理论搜索。

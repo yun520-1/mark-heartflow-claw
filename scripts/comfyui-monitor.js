@@ -12,9 +12,9 @@ const path = require('path');
 const { URL } = require('url');
 
 const COMFYUI_URL = 'https://wp08.unicorn.org.cn:40000';
-const OUTPUT_DIR = '/Users/apple/mark-heartflow-skill-new/downloads/comfyui-videos';
+const OUTPUT_DIR = '/Users/apple/mark-heartflow-claw/downloads/comfyui-videos';
 const STATE_FILE = path.join(OUTPUT_DIR, '.downloaded-history.json');
-const LOG_FILE = '/Users/apple/mark-heartflow-skill-new/logs/comfyui-monitor.log';
+const LOG_FILE = '/Users/apple/mark-heartflow-claw/logs/comfyui-monitor.log';
 
 function log(message) {
   const timestamp = new Date().toISOString();

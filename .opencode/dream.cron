@@ -1,6 +1,29 @@
-# HeartFlow Dream Mode 定时任务
-# 每 21 分钟 - 做梦研究
-*/21 * * * * cd /Users/apple/mark-heartflow-skill && /opt/homebrew/bin/node .opencode/dream-mode.js research >> .opencode/dream-log.txt 2>&1
+# HeartFlow 做梦系统 Crontab 配置
+# 基于 OpenClaw 三阶段做梦架构
+# 项目目录：/Users/apple/mark-heartflow-claw
 
-# 每小时 - 打包上传
-0 * * * * cd /Users/apple/mark-heartflow-skill && /opt/homebrew/bin/node .opencode/dream-mode.js push >> .opencode/dream-log.txt 2>&1
+# ========== 三阶段做梦 ==========
+
+# Light Sleep (每 6 小时) - 短期记忆整理
+0 */6 * * * cd /Users/apple/mark-heartflow-claw && /opt/homebrew/bin/node .opencode/dreaming/heartflow-dream-engine.js light >> logs/dreaming-light.log 2>&1
+
+# Deep Sleep (每天 3:00) - 深度记忆整合
+0 3 * * * cd /Users/apple/mark-heartflow-claw && /opt/homebrew/bin/node .opencode/dreaming/heartflow-dream-engine.js deep >> logs/dreaming-deep.log 2>&1
+
+# REM Sleep (每周日 5:00) - 模式发现
+0 5 * * 0 cd /Users/apple/mark-heartflow-claw && /opt/homebrew/bin/node .opencode/dreaming/heartflow-dream-engine.js rem >> logs/dreaming-rem.log 2>&1
+
+# ========== 记忆提升 ==========
+
+# 短期记忆提升 (每小时)
+0 * * * * cd /Users/apple/mark-heartflow-claw && /opt/homebrew/bin/node .opencode/memory/short-term-promotion.js >> logs/promotion.log 2>&1
+
+# ========== Canvas UI ==========
+
+# 记忆宫殿 UI 刷新 (每 30 分钟)
+*/30 * * * * cd /Users/apple/mark-heartflow-claw && /opt/homebrew/bin/node .opencode/canvas/memory-palace-ui.js >> logs/canvas.log 2>&1
+
+# ========== 原有任务 ==========
+
+# 每 24 分钟增强理论升级 (保留)
+*/24 * * * * /Users/apple/mark-heartflow-claw/scripts/hourly-enhanced-upgrade-v2.sh >> logs/enhanced-cron.log 2>&1

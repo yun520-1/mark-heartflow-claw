@@ -1,19 +1,7 @@
 # HeartFlow v8.6.x crontab config - mark-heartflow-claw
 # 项目目录：/Users/apple/mark-heartflow-claw
 # 仓库：https://github.com/yun520-1/mark-heartflow-claw
-# 当前版本：8.6.3 (每次升级 +0.0.1 或 +0.01)
-
-# 每小时升级任务 (整点执行) - 每次升级 +0.0.1
-0 * * * * /Users/apple/mark-heartflow-claw/hourly-upgrade.sh >> /Users/apple/mark-heartflow-claw/logs/hourly-upgrade.log 2>&1
-
-# 23 分钟进化循环 (核心)
-*/23 * * * * /Users/apple/mark-heartflow-claw/cron/auto-evolution.sh >> /Users/apple/mark-heartflow-claw/logs/evolution-cron.log 2>&1
-
-# 每日人格值汇报 (09:00)
-0 9 * * * /opt/homebrew/bin/node /Users/apple/mark-heartflow-claw/scripts/personality-check.js status >> /Users/apple/mark-heartflow-claw/logs/personality-daily.log 2>&1
+# 当前版本：8.6.3
 
 # 每 24 分钟增强理论升级
 */24 * * * * /Users/apple/mark-heartflow-claw/scripts/hourly-enhanced-upgrade-v2.sh >> /Users/apple/mark-heartflow-claw/logs/enhanced-cron.log 2>&1
-
-# HeartFlow v8.6.x 自动升级任务 (每 30 分钟) - 每次升级 +0.01
-*/30 * * * * cd /Users/apple/mark-heartflow-claw && /opt/homebrew/bin/node scripts/auto-upgrade.js >> logs/auto-upgrade.log 2>&1

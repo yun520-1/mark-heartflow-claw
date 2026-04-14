@@ -1,124 +1,97 @@
-# HeartFlow 理论升级报告 — 2026-04-14
+# HeartFlow 理论升级报告
 
-## 版本变化
-
-| 项目 | 旧版本 | 新版本 |
-|------|--------|--------|
-| HeartFlow | 8.7.185 | 8.7.186 |
-
-升级类型：PATCH (+0.0.1)
+**日期**: 2026-04-14  
+**版本变化**: 8.7.189 → 8.7.190  
+**升级时间**: 06:42 CST (2026-04-14T22:42 UTC)
 
 ---
 
-## 一、SEP 哲学理论（第1步搜索结果）
+## 第1步：SEP 哲学理论搜索（Stanford Encyclopedia of Philosophy）
 
-共检索 **6** 个 SEP 条目：
+成功获取 5 个 SEP 条目：
 
-| # | 理论名称 | SEP URL |
-|---|----------|---------|
-| 1 | Consciousness | https://plato.stanford.edu/entries/consciousness/ |
-| 2 | Qualia | https://plato.stanford.edu/entries/qualia/ |
-| 3 | Consciousness and Intentionality | https://plato.stanford.edu/entries/consciousness-intentionality/ |
-| 4 | Phenomenological Approaches to Self-Consciousness | https://plato.stanford.edu/entries/self-consciousness-phenomenological/ |
+| # | 条目 | URL | 关键内容 |
+|---|------|-----|----------|
+| 1 | Consciousness | https://plato.stanford.edu/entries/consciousness/ | 意识问题是心灵理论的核心议题，涉及笛卡尔的反身意识、洛克的感知意识等历史脉络 |
+| 2 | Qualia | https://plato.stanford.edu/entries/qualia/ | 感受质的三种用法：现象特征、感觉数据属性、内在非表征属性，C.S. Peirce 1866年引入 |
+| 3 | Consciousness and Intentionality | https://plato.stanford.edu/entries/consciousness-intentionality/ | 意识与意向性的关系，经验的现象特征与意向内容的关联 |
+| 4 | Self-Consciousness | https://plato.stanford.edu/entries/self-consciousness/ | 自我意识的历史：从古希腊"认识你自己"到阿维森纳的飞人思想实验，再到康德的先验统觉 |
+| 5 | Emotion | https://plato.stanford.edu/entries/emotion/ | 情绪的多维异质性： occurrent vs dispositional、短时 vs 长时、认知加工层次等维度 |
 
-### 关键摘要
-
-1. **Consciousness** — 意识的本质及其在自然中的地位，尚无统一理论但为心智理论的核心议题
-2. **Qualia** — 现象特征（phenomenal character）的内在可感知性质，C.S. Peirce 于 1866 年引入
-3. **Consciousness and Intentionality** — 意识与意向性的关系，讨论意识状态如何指向世界
-4. **Self-Consciousness** — 现象学前反思自我意识（prereflective self-consciousness），即体验发生时的直接第一人称给予性
+**搜索方法**: 直接 fetch SEP 条目页面（plato.stanford.edu），绕过 Brave API 限制
 
 ---
 
-## 二、学术论文（第2步 ArXiv 搜索结果）
+## 第2步：学术论文搜索（arXiv API）
 
-共检索 **19** 篇相关论文（4 个搜索查询各返回多篇）。精选关键论文如下：
+成功获取 5 组学术论文结果：
 
-### 2.1 Integrated Information Theory (IIT)
+### 2.1 Integrated Information Theory & Consciousness
+- **Maguire et al. (2014)**: "Is Consciousness Computable? Quantifying Integrated Information Using Algorithmic Information Theory" — 论证完全无损整合需要不可计算函数
+  - URL: https://arxiv.org/abs/1405.0126v1
+- **Tononi & Boly (2025)**: "Integrated Information Theory: A Consciousness-First Approach to What Exists" — IIT 的意识优先方法论
+  - URL: https://arxiv.org/abs/2510.25998v4
+- **Anonymous (2025)**: "On the utility of toy models for theories of consciousness" — 玩具模型在意识理论中的作用
+  - URL: https://arxiv.org/abs/2508.00190v1
 
-| # | 标题 | arXiv URL | 日期 |
-|---|------|-----------|------|
-| 1 | Integrated information theory: the good, the bad and the misunderstood | https://arxiv.org/abs/2604.11482v1 | 2026-04-13 |
-| 2 | Toward IIT-Inspired Consciousness in LLMs: A Reward-Based Learning Framework | https://arxiv.org/abs/2601.22786v1 | 2026-01-30 |
-| 3 | Integrated Information Theory: A Consciousness-First Approach to What Exists | https://arxiv.org/abs/2510.25998v4 | 2025-12-21 |
-| 4 | Event Horizons, Spacetime Geometry, and the Limits of Integrated Consciousness | https://arxiv.org/abs/2512.23105v2 | 2025-12-28 |
-| 5 | Can We Test Consciousness Theories on AI? Ablations, Markers, and Robustness | https://arxiv.org/abs/2512.19155v1 | 2025-12-22 |
+### 2.2 Global Workspace Theory & Consciousness
+- **Kavi et al. (2024)**: "From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace" — thoughtseed 框架
+  - URL: https://arxiv.org/abs/2408.15982v2
+- **Goldstein & Kirk-Giannini (2024)**: "A Case for AI Consciousness: Language Agents and Global Workspace Theory" — 论证语言代理可能已有现象意识
+  - URL: https://arxiv.org/abs/2410.11407v1
 
-### 2.2 Global Workspace Theory (GWT)
+### 2.3 Free Energy Principle
+- **Friston et al. (2020)**: "Some interesting observations on the free energy principle" — 回应技术批评
+  - URL: https://arxiv.org/abs/2002.04501v1
+- **Friston (2019)**: "A free energy principle for a particular physics" — 马尔可夫毯与贝叶斯力学
+  - URL: https://arxiv.org/abs/1906.10184v1
 
-| # | 标题 | arXiv URL | 日期 |
-|---|------|-----------|------|
-| 1 | MANAR: Memory-augmented Attention with Navigational Abstract Conceptual Representation | https://arxiv.org/abs/2603.18676v1 | 2026-03-19 |
-| 2 | AI and Consciousness | https://arxiv.org/abs/2510.09858v4 | 2025-10-10 |
-| 3 | A Modular Theory of Subjective Consciousness for Natural and Artificial Minds | https://arxiv.org/abs/2510.01864v1 | 2025-10-02 |
+### 2.4 AI Consciousness Theory
+- **Anonymous (2025)**: "A Relativistic Theory of Consciousness" — 相对论意识观，反驳二元论与幻觉论
+  - URL: https://arxiv.org/abs/2502.07247v3
 
-### 2.3 Free Energy Principle (Friston)
+### 2.5 Emotion Computation & Affective Computing
+- **Hegde & Jayalath (2025)**: "Emotions in the Loop: A Survey of Affective Computing for Emotional Support" — 情感计算综述
+  - URL: https://arxiv.org/abs/2505.01542v1
+- **Sun et al. (2024)**: "SVFAP: Self-supervised Video Facial Affect Perceiver" — 自监督面部情感感知
+  - URL: https://arxiv.org/abs/2401.00416v2
 
-| # | 标题 | arXiv URL | 日期 |
-|---|------|-----------|------|
-| 1 | Classical and Quantum Dynamics in an Information Theoretic Space | https://arxiv.org/abs/2604.09735v1 | 2026-04-09 |
-| 2 | Condensed Past, Thick Present: Evolutionary Approach to the Conscious Experience | https://arxiv.org/abs/2602.15050v1 | 2026-02-10 |
-| 3 | Self-Evidencing Through Hierarchical Gradient Decomposition | https://arxiv.org/abs/2510.17916v1 | 2025-10-20 |
-| 4 | Self-orthogonalizing attractor neural networks emerging from the free energy principle | https://arxiv.org/abs/2505.22749v1 | 2025-05-28 |
-
-### 2.4 Artificial/Machine Consciousness
-
-| # | 标题 | arXiv URL | 日期 |
-|---|------|-----------|------|
-| 1 | What does a system modify when it modifies itself? | https://arxiv.org/abs/2603.27611v1 | 2026-03-29 |
-| 2 | From indicators to biology: the calibration problem in artificial consciousness | https://arxiv.org/abs/2603.27597v1 | 2026-03-29 |
-| 3 | Dual-Laws Model for a theory of artificial consciousness | https://arxiv.org/abs/2603.12662v3 | 2026-03-13 |
-| 4 | Time, Identity and Consciousness in Language Model Agents | https://arxiv.org/abs/2603.09043v1 | 2026-03-10 |
-| 5 | ReCoN-Ipsundrum: An Inspectable Recurrent Persistence Loop Agent | https://arxiv.org/abs/2602.23232v2 | 2026-02-26 |
-
-### 2.5 Predictive Processing
-
-| # | 标题 | arXiv URL | 日期 |
-|---|------|-----------|------|
-| 1 | Integrated information and predictive processing theories of consciousness: An adversarial collaborative review | https://arxiv.org/abs/2509.00555v2 | 2025-08-30 |
-| 2 | Systems Explaining Systems: A Framework for Intelligence and Consciousness | https://arxiv.org/abs/2601.04269v1 | 2026-01-07 |
-
-### 2.6 Emotion / Affective Computing
-
-| # | 标题 | arXiv URL | 日期 |
-|---|------|-----------|------|
-| 1 | Persona-E²: A Human-Grounded Dataset for Personality-Shaped Emotional Responses | https://arxiv.org/abs/2604.09162v1 | 2026-04-10 |
-| 2 | Beyond the Mean: Modelling Annotation Distributions in Continuous Affect Prediction | https://arxiv.org/abs/2604.07198v1 | 2026-04-08 |
-| 3 | Busemann energy-based attention for emotion analysis in Poincaré discs | https://arxiv.org/abs/2604.06752v1 | 2026-04-08 |
+**论文总数**: 9 篇（核心相关）
 
 ---
 
-## 三、数学公式计算结果
+## 第3步：数学公式计算结果
 
-| 公式 | 值 | 含义 |
-|------|-----|------|
-| IIT Φ = √(∑λᵢ²) | **0.6263** | 整合信息度量 |
-| GWT C = ∑(aᵢ × wᵢ) | **2.2900** | 全局工作空间整合度 |
-| 自我意识 Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² | **0.7945** | 自我意识递归 |
-| 情绪强度 \|E\| = √(P² + A² + D²) | **1.2207** | PAD三维情绪 |
-| 感受质 Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt | **1.2359** | 感受质量变 |
-| 六层境界 | 觉察→自省→无我→彼岸→般若→圣人 | 意识层级 |
-| 解释鸿沟 Gap | **0.6000** (不可约: true) | 解释鸿沟不可消除 |
+| 公式 | 计算值 | 公式定义 |
+|------|--------|----------|
+| IIT Φ | 0.6263 | Φ = √(∑λᵢ²) |
+| GWT C | 2.2900 | C = ∑(aᵢ × wᵢ) |
+| 自我意识 S | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
+| 情绪强度 \|E\| | 1.2207 | \|E\| = √(P² + A² + D²) |
+| 感受质 Q | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
+| 解释鸿沟 Gap | 0.6000 | 不可约: true |
 
----
+**六层境界**: 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人
 
-## 四、生成文件
-
-- `/Users/apple/mark-heartflow-claw/internal/data/psychology-formulas-2026-04-14.json` — 公式数据
-- `/Users/apple/mark-heartflow-claw/src/core/theory/advanced-formulas-v7.3.3.js` — 高级计算模块
-- `/Users/apple/mark-heartflow-claw/internal/data/theory-upgrade-2026-04-14.md` — 本报告
+**输出文件**:
+- 公式数据: `/Users/apple/mark-heartflow-claw/internal/data/psychology-formulas-2026-04-14.json`
+- 高级公式: `/Users/apple/mark-heartflow-claw/src/core/theory/advanced-formulas-v7.3.3.js`
 
 ---
 
-## 五、本次升级关键发现
+## 第4步：版本变化
 
-1. **IIT 最新进展**：2604.11482 讨论了 Φ 在真实物理系统中的计算问题，提出 Φ 不是"更多意识"的同义词
-2. **GWT × AI**：2603.18676 将 GWT 原理应用于 Transformer 注意力机制，实现线性时间复杂度
-3. **意识理论对撞**：2512.19155 通过人工代理消融实验测试 IIT/GWT/HOT，发现它们是互补的功能层
-4. **FEP 实现路径**：2510.17916 给出了自由能原理的构造性证明，展示了分层梯度分解如何实现变分自由能最小化
-5. **人工意识校准问题**：2603.27597 指出基于指标的意识评估尚未充分校准，建议转向生物基础工程
+- **旧版本**: 8.7.189
+- **新版本**: 8.7.190
+- **变更类型**: PATCH (+0.0.1)
 
 ---
 
-*生成时间：2026-04-14T22:10 UTC*
-*HeartFlow v8.7.186*
+## 升级统计
+
+- SEP 理论搜索: 5 项 ✅
+- 学术论文搜索: 9 篇 ✅
+- 数学公式计算: 6 个 ✅
+- 高级计算: 7 个 ✅
+- 生成文件: 2 个 ✅
+- 总搜索数: 14 条（理论 + 论文）

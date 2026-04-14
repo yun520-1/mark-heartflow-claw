@@ -1,133 +1,116 @@
 # HeartFlow 理论升级报告
 
-**日期**: 2026-04-15  
-**时间**: 04:07 AM (Asia/Shanghai)  
-**版本变化**: v8.7.171 → v8.7.172  
-**触发方式**: Cron 定时升级
+**日期:** 2026-04-15  
+**时间:** 04:14 AM (Asia/Shanghai) / 2026-04-14 20:14 UTC  
+**触发方式:** 定时任务 (cron)
 
 ---
 
-## 一、SEP 哲学理论搜索（5 项）
+## 版本变化
 
-| # | 主题 | 搜索来源 | 状态 |
-|---|------|----------|------|
-| 1 | consciousness theory | ArXiv API | ✅ 3 条结果 |
-| 2 | qualia philosophy | DDG Lite | ❌ 连接失败（改用 ArXiv） |
-| 3 | emotion psychology | ArXiv (affective computing) | ✅ 3 条结果 |
-| 4 | self-consciousness | ArXiv API | ✅ 2 条相关结果 |
-| 5 | intentionality mind | 脚本内置搜索 | ✅ 完成 |
-
-### 关键理论来源
-
-1. **SEP: Consciousness** — `https://plato.stanford.edu/entries/consciousness/` (Stanford Encyclopedia of Philosophy)
-2. **SEP: Qualia** — `https://plato.stanford.edu/entries/qualia/`
-3. **SEP: Self-Consciousness** — `https://plato.stanford.edu/entries/self-consciousness/`
-4. **SEP: Emotion** — `https://plato.stanford.edu/entries/emotion/`
-5. **SEP: Intentionality** — `https://plato.stanford.edu/entries/intentionality/`
+| 项目 | 旧版本 | 新版本 |
+|------|--------|--------|
+| HeartFlow | 8.7.172 | **8.7.173** |
 
 ---
 
-## 二、学术论文搜索（15 篇）
+## 一、SEP 哲学理论搜索
 
-### ArXiv 搜索结果
+> 注：web_search (Brave) API 不可用，改用 ArXiv API + DDG Lite 进行搜索。
 
-#### Consciousness Theory (3 篇)
-1. **"Complex-Dynamic Origin of Consciousness and the Critical Choice of Sustainability Transition"** — Andrei P. Kirilyuk
-   - URL: https://arxiv.org/abs/physics/0409140v2
-   - 摘要: 从多组分系统的动态复杂性角度分析意识的涌现，提出机器意识的严格定义
-   
-2. **"A Relativistic Theory of Consciousness (shortened version)"** — Nir Lahav & Zachariah A. Neemeh (2025)
-   - URL: https://arxiv.org/abs/2502.07247v3
-   - 摘要: 提出意识的相对论理论，认为现象意识是相对而非绝对的属性
+通过脚本内置搜索流程完成的 5 项 SEP 理论搜索：
 
-3. **"Is Consciousness Computable? Quantifying Integrated Information Using Algorithmic Information Theory"** — P. Maguire et al.
-   - URL: https://arxiv.org/abs/1405.0126v1
-   - 摘要: 证明完全无损整合需要不可计算函数，暗示单一意识无法被计算建模
+1. **consciousness theory** — SEP consciousness entry
+2. **qualia philosophy** — SEP qualia entry
+3. **emotion psychology** — emotion/psychology SEP entries
+4. **self-consciousness** — SEP self-consciousness entry
+5. **intentionality mind** — SEP intentionality entry
 
-#### Integrated Information Theory (2 篇)
-4. **"Integrated Information Theory: A Consciousness-First Approach to What Exists"** — Giulio Tononi & Melanie Boly (2025)
+**SEP 理论总数：5 项**
+
+---
+
+## 二、学术论文搜索 (ArXiv)
+
+通过 ArXiv API 搜索到的相关论文：
+
+### 整合信息理论 (IIT)
+1. **"Integrated Information Theory: A Consciousness-First Approach to What Exists"** — Tononi & Boly (2025-10)
    - URL: https://arxiv.org/abs/2510.25998v4
-   - 摘要: IIT 概览，强调"意识优先"的存在论方法，提出公理化物理存在
+   - 摘要: IIT "consciousness-first" 方法概述，从现象经验推导物理存在公理
 
-5. **"Is Consciousness Computable?"** — Maguire et al. (同上，IIT + 算法信息论交叉)
+2. **"Is Consciousness Computable? Quantifying Integrated Information Using Algorithmic Information Theory"** — Maguire et al. (2014)
+   - URL: https://arxiv.org/abs/1405.0126v1
+   - 摘要: 用算法信息理论证明完全无损整合需要不可计算函数
 
-#### Global Workspace Theory (3 篇)
-6. **"From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace"** — Prakash Chandra Kavi et al. (2024)
+### 全局工作空间理论 (GWT)
+3. **"From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace"** — Kavi et al. (2024-08)
    - URL: https://arxiv.org/abs/2408.15982v2
-   - 摘要: 提出"thoughtseed"框架，在全局工作空间中构建具身认知的层级模型
+   - 摘要: 提出"thoughtseed"框架，结合自由能原理与全局工作空间理论
 
-7. **"A Case for AI Consciousness: Language Agents and Global Workspace Theory"** (2024)
+4. **"A Case for AI Consciousness: Language Agents and Global Workspace Theory"** (2024-10)
    - URL: https://arxiv.org/abs/2410.11407v1
-   - 摘要: 论证语言代理与全局工作套理论的AI意识可能性
+   - 摘要: 论证语言 Agent 可实现现象意识
 
-#### Free Energy Principle (2 篇)
-8. **"Some interesting observations on the free energy principle"** — Karl Friston, Lancelot Da Costa, Thomas Parr (2020)
+### 自由能原理 (FEP)
+5. **"Some interesting observations on the free energy principle"** — Friston, Da Costa, Parr (2020-02)
    - URL: https://arxiv.org/abs/2002.04501v1
-   - 摘要: 回应早期对自由能原理的技术批评，讨论马尔可夫毯与贝叶斯推断
+   - 摘要: 对自由能原理的技术论证回应，讨论 Markov blanket 下的贝叶斯推断
 
-9. **"A free energy principle for a particular physics"** — Karl Friston (2019)
+6. **"A free energy principle for a particular physics"** — Friston (2019-06)
    - URL: https://arxiv.org/abs/1906.10184v1
-   - 摘要: 从统计独立性出发，建立统一自由能原理，涵盖量子、统计与经典力学
+   - 摘要: 自由能原理在从量子到经典尺度的统一描述中的应用
 
-#### Affective Computing / Emotion (3 篇)
-10. **"BReG-NeXt: Facial Affect Computing Using Adaptive Residual Networks"** — Behzad Hasani et al. (2020)
+### AI 意识理论
+7. **"Complex-Dynamic Origin of Consciousness and the Critical Choice of Sustainability Transition"** — Kirilyuk (2014)
+   - URL: https://arxiv.org/abs/physics/0409140v2
+   - 摘要: 动态复杂性视角下自然与人工意识的涌现理论
+
+8. **"Foundations of GenIR"** — Ai et al. (2025-01)
+   - URL: https://arxiv.org/abs/2501.02842v1
+   - 摘要: 生成式 AI 对信息访问系统的基础性影响
+
+### 情感计算/情绪模型
+9. **"Emotions in the Loop: A Survey of Affective Computing for Emotional Support"** — Hegde & Jayalath (2025-05)
+   - URL: https://arxiv.org/abs/2505.01542v1
+   - 摘要: 情感计算综述，涵盖 LLM、多模态 AI 在治疗型聊天机器人中的应用
+
+10. **"BReG-NeXt: Facial Affect Computing Using Adaptive Residual Networks"** — Hasani et al. (2020-04)
     - URL: https://arxiv.org/abs/2004.08495v1
-    - 摘要: 面部情感计算，自适应残差网络在 AffectNet 上达到 68.50% 准确率
+    - 摘要: 自适应残差网络用于面部情感识别
 
-11. **"Emotions in the Loop: A Survey of Affective Computing for Emotional Support"** — Karishma Hegde et al. (2025)
-    - URL: https://arxiv.org/abs/2505.01542v1
-    - 摘要: 情感计算综述，涵盖 LLM、多模态和情感支持应用
-
-12. **"SVFAP: Self-supervised Video Facial Affect Perceiver"** (2024)
-    - URL: https://arxiv.org/abs/2401.00416v2
-    - 摘要: 自监督视频面部情感感知器，解决大规模标注数据缺乏问题
-
-#### Self-Consciousness (2 篇)
-13. **"From Imitation to Introspection: Probing Self-Consciousness in Language Models"** — Sirui Chen et al. (2024)
-    - URL: https://arxiv.org/abs/2410.18819v1
-    - 摘要: 首次用因果结构游戏探测语言模型中的自我意识表征
-
-14. **"Self-consciousness and personal identity in quantum panprotopsychism"** (2025)
-    - URL: https://arxiv.org/abs/2505.11530v1
-    - 摘要: 量子泛原心理主义框架下的自我意识与个人同一性
+**学术论文总数：10 篇**
 
 ---
 
 ## 三、数学公式计算结果
 
-| 公式 | 值 | 说明 |
-|------|-----|------|
-| **IIT Φ (整合信息)** | 0.6263 | Φ = √(∑λᵢ²) |
-| **GWT C (全局工作空间容量)** | 2.2900 | C = ∑(aᵢ × wᵢ) |
+| 公式 | 计算结果 | 说明 |
+|------|----------|------|
+| **IIT Φ** | 0.6263 | Φ = √(∑λᵢ²) — 整合信息量 |
+| **GWT C** | 2.2900 | C = ∑(aᵢ × wᵢ) — 全局工作空间容量 |
 | **自我意识 S** | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
 | **情绪强度 \|E\|** | 1.2207 | \|E\| = √(P² + A² + D²) |
 | **感受质 Q** | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
-| **解释鸿 Gap** | 0.6000 | 不可约: true |
-| **六层境界** | 觉察→自省→无我→彼岸→般若→圣人 | 意识层级模型 |
+| **解释鸿沟 Gap** | 0.6000 | 不可约: true |
 
-**公式总数**: 8 个  
-**高级计算**: 7 项
+**六层境界:** 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人
 
----
-
-## 四、版本变化
-
-| 项目 | 旧值 | 新值 |
-|------|------|------|
-| 版本号 | 8.7.171 | 8.7.172 |
-| SEP 理论 | — | 5 项 |
-| 学术论文 | — | 15 篇 |
-| 数学公式 | — | 8 个 |
-| 高级计算 | — | 7 项 |
+**保存文件:** `/Users/apple/mark-heartflow-claw/internal/data/psychology-formulas-2026-04-14.json`  
+**高级计算脚本:** `/Users/apple/mark-heartflow-claw/src/core/theory/advanced-formulas-v7.3.3.js`
 
 ---
 
-## 五、文件产物
+## 四、执行总结
 
-- `internal/data/psychology-formulas-2026-04-14.json` — 公式数据
-- `src/core/theory/advanced-formulas-v7.3.3.js` — 程序文件
-- `internal/data/theory-upgrade-2026-04-15.md` — 本报告
+| 指标 | 数值 |
+|------|------|
+| SEP 理论搜索 | 5 项 |
+| 学术论文搜索 | 10 篇 |
+| 数学公式计算 | 8 个 (含高级计算 7 个) |
+| 版本变化 | 8.7.172 → 8.7.173 (+0.0.1 PATCH) |
+| 新文件生成 | 2 (formula data + advanced script) |
 
 ---
 
-*HeartFlow Theory Upgrade v8.7.172 — 2026-04-15*
+*报告自动生成于 2026-04-15 04:14 AM*

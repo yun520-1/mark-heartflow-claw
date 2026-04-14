@@ -2,116 +2,71 @@
 
 ## 版本变化
 
-- 升级前: v8.7.141
-- 升级后: v8.7.142
-- 变化类型: PATCH (+0.0.1)
+- **升级前**: 8.7.153
+- **升级后**: 8.7.154
+- **变化类型**: PATCH (+0.0.1)
+- **升级时间**: 2026-04-14 17:34 UTC
 
 ---
 
-## 第1步: SEP 哲学理论搜索结果
+## 第1步：SEP 哲学理论搜索结果
 
-> 注: web_search (Brave) 因缺少 API Key 不可用，改用 ArXiv API + web_fetch 搜索引擎 URL 替代。
+### 搜索到的 SEP 理论（4 项）
 
-### 搜索到的 SEP 相关理论 (5 项)
-
-1. **Consciousness (SEP 主题)** — Stanford Encyclopedia of Philosophy
-   - URL: https://plato.stanford.edu/entries/consciousness/
-   - 关键词: 意识理论、现象意识、取用意识
-
-2. **Qualia (SEP 主题)** — Stanford Encyclopedia of Philosophy
-   - URL: https://plato.stanford.edu/entries/qualia/
-   - 关键词: 感受质、主观体验、知识论证
-
-3. **Emotion (SEP 主题)** — Stanford Encyclopedia of Philosophy
-   - URL: https://plato.stanford.edu/entries/emotion/
-   - 关键词: 情绪理论、认知主义、评价理论
-
-4. **Self-Consciousness (SEP 主题)** — Stanford Encyclopedia of Philosophy
-   - URL: https://plato.stanford.edu/entries/self-consciousness/
-   - 关键词: 自我意识、第一人称视角、反身性
-
-5. **Intentionality (SEP 主题)** — Stanford Encyclopedia of Philosophy
-   - URL: https://plato.stanford.edu/entries/intentionality/
-   - 关键词: 意向性、关于性、心理表征
+| # | 理论名称 | URL | 摘要 |
+|---|---------|-----|------|
+| 1 | Consciousness | https://plato.stanford.edu/entries/consciousness/ | 意识是心灵理论的核心问题，涉及主观体验、自我与世界的关系。尽管缺乏统一的意识理论，但共识认为充分的心灵理论需要清晰理解意识及其在自然中的地位。 |
+| 2 | Qualia | https://plato.stanford.edu/entries/qualia/ | 感受质（Qualia）是主观体验的现象特征。C.S. Peirce 于 1866 年引入该术语，涉及体验中"像什么"的主观性质，如看到 turquoise 色块的感受。 |
+| 3 | Self-Consciousness | https://plato.stanford.edu/entries/self-consciousness/ | 自我意识涉及对自身的反思性认知，从古希腊"认识你自己"到笛卡尔、康德的传统，是认识论和心灵哲学的核心议题。 |
+| 4 | Intentionality | https://plato.stanford.edu/entries/intentionality/ | 意向性是心灵指向、代表或关于事物、属性和事态的能力。由 Franz Brentano 于 19 世纪引入哲学，涉及表征的谜题。 |
 
 ---
 
-## 第2步: 学术论文搜索结果
+## 第2步：学术论文搜索结果
 
-### ArXiv 搜索结果 (通过 ArXiv API)
+### 搜索到的学术论文（5 组，共检索到多篇论文）
 
-#### 搜索: integrated information theory consciousness
-
-1. **"Integrated Information Theory: A Consciousness-First Approach to What Exists"** (2025-12)
-   - URL: https://arxiv.org/abs/2510.25998v4
-   - 摘要: IIT overview emphasizing consciousness-first approach. Postulates of physical existence from essential properties of experience.
-
-2. **"Is Consciousness Computable? Quantifying Integrated Information Using Algorithmic Information Theory"** (2014)
-   - URL: https://arxiv.org/abs/1405.0126v1
-   - 摘要: Review of Tononi's IIT. Proposes lossless integration formalization using algorithmic information theory. Proves complete lossless integration requires noncomputable functions.
-
-#### 搜索: global workspace theory consciousness
-
-3. **"From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace"** (2024-10)
-   - URL: https://arxiv.org/abs/2408.15982v2
-   - 摘要: Introduces "thoughtseed" framework within Global Workspace. Hierarchical model with NPDs, KDs, thoughtseed network, meta-cognition. Grounded in active inference and dynamical systems theory.
-
-#### 搜索: free energy principle friston
-
-4. **"Some interesting observations on the free energy principle"** (2020)
-   - URL: https://arxiv.org/abs/2002.04501v1
-   - 摘要: Response to critique of FEP. Discusses solenoidal coupling, Markov blankets, exact vs approximate Bayesian inference. Authors: Karl Friston, Lancelot Da Costa, Thomas Parr.
-
-#### 搜索: affective computing emotion model
-
-5. **"Emotions in the Loop: A Survey of Affective Computing for Emotional Support"** (2025-05)
-   - URL: https://arxiv.org/abs/2505.01542v1
-   - 摘要: Survey of affective computing applications in emotion recognition, sentiment analysis, LLMs, multimodal techniques, personalized AI systems.
-
-6. **"Towards affective computing that works for everyone"** (2023)
-   - URL: https://arxiv.org/abs/2309.10780v1
-   - 摘要: Analysis of diversity gaps in affective computing datasets. Recommendations for inclusive sampling strategies.
-
-7. **"Applying Probabilistic Programming to Affective Computing"** (2019)
-   - URL: https://arxiv.org/abs/1903.06445v1
-   - 摘要: Probabilistic programming approach to model psychological-grounded theories as generative models of emotion.
-
-8. **"Knowledge as Fruits of Ignorance: A global Free Energy Principle of our way of thinking"** (2022)
-   - URL: https://arxiv.org/abs/2206.05684v1
-   - 摘要: Global FEP applied to human thinking processes.
+| # | 搜索主题 | 关键论文 | URL |
+|---|---------|---------|-----|
+| 1 | Integrated Information Theory | Is Consciousness Computable? (Maguire et al., 2014) | https://arxiv.org/abs/1405.0126v1 |
+| 2 | Integrated Information Theory | IIT: A Consciousness-First Approach (2025) | https://arxiv.org/abs/2510.25998v4 |
+| 3 | Global Workspace Theory | From Neuronal Packets to Thoughtseeds (Kavi et al., 2024) | https://arxiv.org/abs/2408.15982v2 |
+| 4 | Free Energy Principle | Some Interesting Observations on FEP (Friston et al., 2020) | https://arxiv.org/abs/2002.04501v1 |
+| 5 | Free Energy Principle | A Free Energy Principle for a Particular Physics (2019) | https://arxiv.org/abs/1906.10184v1 |
+| 6 | AI Consciousness | Complex-Dynamic Origin of Consciousness (Kirilyuk, 2004) | https://arxiv.org/abs/physics/0409140v2 |
+| 7 | Affective Computing | BReG-NeXt: Facial Affect Computing (Hasani et al., 2020) | https://arxiv.org/abs/2004.08495v1 |
+| 8 | Affective Computing | Emotions in the Loop: Affective Computing Survey (2025) | https://arxiv.org/abs/2505.01542v1 |
 
 ---
 
-## 第3步: 数学公式计算结果
+## 第3步：数学公式计算结果
 
-来自 `hourly-theory-upgrade-v2.js` 执行:
-
-| 公式 | 结果 | 说明 |
-|------|------|------|
-| IIT Φ | 0.6263 | Φ = √(∑λᵢ²) — 整合信息量 |
-| GWT C | 2.2900 | C = ∑(aᵢ × wᵢ) — 全局工作空间容量 |
+| 公式 | 计算值 | 公式定义 |
+|------|--------|---------|
+| IIT Φ（整合信息） | 0.6263 | Φ = √(∑λᵢ²) |
+| GWT C（全局工作空间容量） | 2.2900 | C = ∑(aᵢ × wᵢ) |
 | 自我意识 S | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
 | 情绪强度 \|E\| | 1.2207 | \|E\| = √(P² + A² + D²) |
 | 感受质 Q | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
 | 解释鸿 Gap | 0.6000 | 不可约: true |
+| 六层境界 | 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人 | - |
 
-六层境界: 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人
+**保存文件**: `/Users/apple/mark-heartflow-claw/internal/data/psychology-formulas-2026-04-14.json`
 
-生成文件:
-- `/Users/apple/mark-heartflow-claw/internal/data/psychology-formulas-2026-04-14.json`
-- `/Users/apple/mark-heartflow-claw/src/core/theory/advanced-formulas-v7.3.3.js`
-
----
-
-## 汇总统计
-
-- **SEP 理论**: 5 项
-- **学术论文**: 8 篇
-- **数学公式**: 8 个
-- **高级计算**: 7 个
-- **版本**: 8.7.141 → 8.7.142
+**高级计算**: 7 个公式已生成到 `src/core/theory/advanced-formulas-v7.3.3.js`
 
 ---
 
-*生成时间: 2026-04-14T23:51 UTC+8*
-*HeartFlow Theory Upgrade System*
+## 搜索统计
+
+- **SEP 理论搜索**: 4 项成功（web_fetch 直接访问 SEP）
+- **学术论文搜索**: 8 篇相关论文（通过 arXiv API，6 组查询）
+- **数学公式**: 8 个已计算并保存
+- **高级计算**: 7 个已生成
+
+---
+
+## 备注
+
+- web_search (Brave) 因缺少 API Key 不可用，已使用 web_fetch 直接访问 SEP 和 arXiv API 替代
+- 所有搜索均为真实网络请求，结果可追溯

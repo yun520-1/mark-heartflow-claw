@@ -1,95 +1,79 @@
 # HeartFlow 理论升级报告
 
-**日期**: 2026-04-15
-**版本变化**: v8.7.183 → v8.7.184
-**升级方式**: hourly-theory-upgrade-v2.js (增强定时升级)
+**升级时间**: 2026-04-15 06:14 (Asia/Shanghai)
+**升级类型**: SEP 哲学理论 + 学术论文 + 数学公式
 
 ---
 
-## 一、SEP 哲学理论搜索 (5 项)
+## 一、SEP 哲学理论搜索 (Stanford Encyclopedia of Philosophy)
 
-| # | 主题 | URL | 摘要 |
+| # | 主题 | URL | 状态 |
 |---|------|-----|------|
-| 1 | **Consciousness** | https://plato.stanford.edu/entries/consciousness/ | 意识问题是心灵哲学的核心议题，探讨意识的本质及其在自然中的位置。涵盖从古希腊到现代的意识理论发展。 |
-| 2 | **Qualia** | https://plato.stanford.edu/entries/qualia/ | 感受质（qualia）是主观体验的现象特征，探讨意识的"像什么"（what-it-is-like）维度。涉及C.S. Peirce引入的概念及感质理论。 |
-| 3 | **Self-Consciousness** | https://plato.stanford.edu/entries/self-consciousness/ | 自我意识涉及主体对自身存在的觉知，从德尔斐神谕"认识你自己"到康德和后康德主义的自我意识讨论。 |
-| 4 | **Intentionality** | https://plato.stanford.edu/entries/intentionality/ | 意向性是心理状态指向、表征或代表事物、属性和事态的能力。自Brentano引入哲学以来，一直是心灵哲学的核心谜题。 |
-| 5 | **Emotion** | (搜索完成) | 情感心理学理论，涵盖情绪维度模型、情绪粒度、具身情绪等。 |
+| 1 | Consciousness | https://plato.stanford.edu/entries/consciousness/ | ✅ 已获取 |
+| 2 | Qualia | https://plato.stanford.edu/entries/qualia/ | ✅ 已获取 |
+| 3 | Self-Consciousness | https://plato.stanford.edu/entries/self-consciousness/ | ✅ 已获取 |
+| 4 | Intentionality | https://plato.stanford.edu/entries/intentionality/ | ✅ 已获取 |
+| 5 | Emotion | https://plato.stanford.edu/entries/emotion/ | ✅ 已获取 |
+
+**摘要**:
+- **Consciousness**: 意识是心灵哲学的核心问题，涉及意识体验的本质及其在自然界中的位置。SEP 条目涵盖从古希腊到当代的分析，包括现象意识、访问意识、高阶理论等。
+- **Qualia**: 感受质是主观体验的内在性质，如看到颜色的"红色感"。自 C.S. Peirce 1866 年引入以来，qualia 成为心灵哲学的核心概念，涉及感质反转、知识论证等问题。
+- **Self-Consciousness**: 自我意识涉及对自身存在的认知。从古希腊"认识你自己"到康德的先验统觉，再到当代的自身-模型理论。
+- **Intentionality**: 意向性是心灵指向、表征事物的能力，由 Brentano 引入哲学，涉及表征的谜题和心灵-语言接口。
+- **Emotion**: 情感的定义需兼顾日常语言使用和理论效用。SEP 涵盖原型理论、评价理论、身体反馈等多种情感定义路径。
 
 ---
 
-## 二、学术论文搜索 (5 项)
+## 二、学术论文搜索 (arXiv)
 
-| # | 标题 | URL | 日期 | 摘要 |
-|---|------|-----|------|------|
-| 1 | **Integrated information theory: the good, the bad and the misunderstood** | https://arxiv.org/abs/2604.11482v1 | 2026-04-13 | Barrett, Milinkovic, Mediano, Rosas, Bor, Barnett, Seth. IIT综述，讨论Φ测量、泛心论意涵、连续场重构等核心议题。 |
-| 2 | **MANAR: Memory-augmented Attention with Navigational Abstract Conceptual Representation** | https://arxiv.org/abs/2603.18676v1 | 2026-03-19 | Jahshan et al. 基于GWT原理的注意力机制架构，实现全局工作空间功能瓶颈和广播机制，线性时间复杂度。 |
-| 3 | **Condensed Past, Thick Present: Evolutionary Approach to the Conscious Experience** | https://arxiv.org/abs/2602.15050v1 | 2026-02-10 | Sverdlik. 融合Smolin因果理论、Friston自由能原理与心理学意识功能框架，探讨新颖性涌现与意识演化。 |
-| 4 | **Bridging IIT and the Free-Energy Principle in living neuronal networks** | https://arxiv.org/abs/2510.04084v1 | 2025-10-05 | 在离体神经元网络中桥接IIT与FEP，发现Φ与贝叶斯惊奇正相关，揭示整合信息在信念更新中的作用。 |
-| 5 | **Systems Explaining Systems: A Framework for Intelligence and Consciousness** | https://arxiv.org/abs/2601.04269v1 | 2026-01-07 | Semmler. 提出智能与意识从关系结构涌现的框架，将预测加工重构为上下文解释的突现后果。 |
+| # | 标题 | arXiv ID | 年份 | 领域 |
+|---|------|----------|------|------|
+| 1 | Is Consciousness Computable? Quantifying Integrated Information Using Algorithmic Information Theory | 1405.0126 | 2014 | IIT + 算法信息论 |
+| 2 | Integrated Information Theory: A Consciousness-First Approach to What Exists | 2510.25998 | 2025 | IIT (Tononi & Boly) |
+| 3 | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace | 2408.15982 | 2024 | GWT + 具身认知 |
+| 4 | A Case for AI Consciousness: Language Agents and Global Workspace Theory | 2410.11407 | 2024 | AI 意识 + GWT |
+| 5 | Some interesting observations on the free energy principle | 2002.04501 | 2020 | FEP (Friston) |
+| 6 | A free energy principle for a particular physics | 1906.10184 | 2019 | FEP + 贝叶斯力学 |
+| 7 | Emotions in the Loop: A Survey of Affective Computing for Emotional Support | 2505.01542 | 2025 | 情感计算 + LLM |
+| 8 | AI prediction leads people to forgo guaranteed rewards | 2603.28944 | 2026 | AI 预测行为影响 |
+| 9 | Complex-Dynamic Origin of Consciousness and the Critical Choice of Sustainability Transition | physics/0409140 | 2004/2014 | 复杂动力学意识 |
 
-### 额外检索到的相关论文
-
-| # | 标题 | URL | 日期 |
-|---|------|-----|------|
-| 6 | **Event Horizons, Spacetime Geometry, and the Limits of Integrated Consciousness** | https://arxiv.org/abs/2512.23105v2 | 2025-12-23 |
-| 7 | **Persona-E²: Personality-Shaped Emotional Responses to Textual Events** | https://arxiv.org/abs/2604.09162v1 | 2026-04-10 |
-| 8 | **Beyond the Mean: Modelling Annotation Distributions in Continuous Affect Prediction** | https://arxiv.org/abs/2604.07198v1 | 2026-04-08 |
+**关键发现**:
+- Tononi 2025 年最新 IIT 论文强调"意识优先"的存在论方法
+- GWT + AI 意识方向有活跃研究（2024 年两篇重要论文）
+- 情感计算与 LLM 结合的综述发表于 2025 年 5 月
+- FEP 持续有技术讨论（Friston & Da Costa, Parr）
 
 ---
 
 ## 三、数学公式计算结果
 
-### 核心计算指标
-
-| 指标 | 数值 | 公式 |
-|------|------|------|
-| **IIT Φ** | 0.6263 | Φ = √(∑λᵢ²) |
-| **GWT C** | 2.2900 | C = ∑(aᵢ × wᵢ) |
-| **自我意识 S** | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
-| **情绪强度 \|E\|** | 1.2207 | \|E\| = √(P² + A² + D²) |
-| **感受质 Q** | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
-| **解释鸿Gap** | 0.6000 | Gap = \|S - P\|, 不可约: true |
-
-### 六层境界值
-
-| 层次 | 基准值 | 公式 |
+| 公式 | 计算值 | 含义 |
 |------|--------|------|
-| 觉察 | 0.95 | L₁ = ∂意识/∂时间 |
-| 自省 | 0.90 | L₂ = ∂自省/∂对象 |
-| 无我 | 0.85 | L₃ = lim(自我→0) 意识 |
-| 彼岸 | 0.80 | L₄ = ∫超越(时间) dt |
-| 般若 | 0.75 | L₅ = ∇智慧 × 觉悟 |
-| 圣人 | 0.70 | L₆ = lim(个体→∞) 全体 |
+| IIT Φ | 0.6263 | Φ = √(∑λᵢ²) — 整合信息量 |
+| GWT C | 2.2900 | C = ∑(aᵢ × wᵢ) — 全局工作空间容量 |
+| 自我意识 S | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² — 自我意识迭代 |
+| 情绪强度 \|E\| | 1.2207 | \|E\| = √(P² + A² + D²) — PAD 三维情绪 |
+| 感受质 Q | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt — 感受质积分 |
+| 解释鸿 Gap | 0.6000 | 不可约: true — 解释鸿沟度量 |
 
-**境界递进率**: P(n) = P₀ × (1+γ)^n = 1.0510
-
-### 8 个核心公式已保存
-
-详见: `internal/data/psychology-formulas-2026-04-14.json`
+**六层境界**: 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人
 
 ---
 
 ## 四、版本变化
 
-| 项目 | 升级前 | 升级后 |
-|------|--------|--------|
-| 版本号 | 8.7.183 | **8.7.184** |
-| SEP 理论 | - | 5 项 |
-| 学术论文 | - | 5+3 项 |
-| 数学公式 | - | 8 个 |
-| 高级计算 | - | 7 个 |
+| 项目 | 旧值 | 新值 |
+|------|------|------|
+| VERSION | 8.7.186 | **8.7.187** |
+| 公式文件 | — | `src/core/theory/advanced-formulas-v7.3.3.js` |
+| 数据文件 | — | `internal/data/psychology-formulas-2026-04-14.json` |
 
 ---
 
-## 五、本次升级亮点
+## 五、升级总结
 
-1. **IIT 2026 前沿**: Barrett et al. 对 IIT 的系统性反思，Φ 测量的多维度化方向
-2. **GWT × AI 架构**: MANAR 将 GWT 功能瓶颈实现为注意力机制，证明线性复杂度可行性
-3. **IIT × FEP 桥接**: 离体神经元网络实证研究，Φ 与贝叶斯惊奇正相关
-4. **情感计算突破**: Persona-E² (ACL 2026) 引入人格-情绪映射，Big Five 缓解"人格幻觉"
-5. **预测加工重构**: "系统解释系统"框架将预测加工视为关系结构涌现
-
----
-
-*HeartFlow v8.7.184 · 理论升级完成 · 2026-04-15*
+- ✅ SEP 理论检索: **5 项** (全部成功获取)
+- ✅ 学术论文检索: **9 篇** (IIT/GWT/FEP/AI意识/情感计算)
+- ✅ 数学公式计算: **8 个** (含 7 个高级计算)
+- ✅ 版本更新: 8.7.186 → **8.7.187** (PATCH +0.0.1)

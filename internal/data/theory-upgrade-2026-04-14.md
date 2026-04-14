@@ -1,103 +1,69 @@
-# HeartFlow 理论升级报告
+# HeartFlow 理论升级报告 - 2026-04-14
 
-**日期**: 2026-04-14T18:08 UTC
-**版本号**: 8.7.157 → 8.7.158
+## 版本变化
 
----
-
-## 一、SEP 哲学理论搜索 (Step 1)
-
-> 注: Brave Search API key 未配置，改用 web_fetch 直接访问 SEP 原文获取真实内容。
-
-| # | 理论 | SEP URL | 核心内容摘要 |
-|---|------|---------|-------------|
-| 1 | **Consciousness** | https://plato.stanford.edu/entries/consciousness/ | 意识是心灵哲学的核心问题，探讨主观经验与物理世界的关系，涵盖历史脉络(从古希腊到现代)、现象意识与取用意识的区分 |
-| 2 | **Qualia** | https://plato.stanford.edu/entries/qualia/ | 感受质作为经验的主体性特征(what it is like)，探讨内在的、可直接感知的非表征属性，C.S. Peirce 1866年首次引入术语 |
-| 3 | **Self-Consciousness** | https://plato.stanford.edu/entries/self-consciousness/ | 自我意识的历史追溯至德尔斐神谕"认识你自己"，亚里士多德主张感知任何事物时必感知自身存在，康德后成为认识论核心 |
-| 4 | **Intentionality** | https://plato.stanford.edu/entries/intentionality/ | 心灵指向对象的能力(Franz Brentano 19世纪引入)，涉及表征、内容、语义学等核心问题 |
-| 5 | **Emotion** | https://plato.stanford.edu/entries/emotion/ | 情绪定义的两大标准:与日常语言兼容性和理论富饶性，原型组织(Fehr & Russell 1984)，区分描述性定义与规定性定义 |
-| 6 | **Information Entropy** | https://plato.stanford.edu/entries/information-entropy/ | 信息处理与热力学熵的关系，Maxwell 妖、Szilard 引擎、Landauer 原理等计算热力学基础问题 |
-
-**备注**: `predictive-processing` 和 `integrated-information` 条目在 SEP 不存在(404)，可能使用不同的 slug 名称。
+**8.7.161 → 8.7.162** (PATCH +0.0.1)
 
 ---
 
-## 二、学术论文搜索 (Step 2)
+## 第1步：SEP 哲学理论搜索结果
 
-> 来源: arXiv 搜索结果
+| # | 理论 | URL | 摘要 |
+|---|------|-----|------|
+| 1 | Consciousness | https://plato.stanford.edu/entries/consciousness/ | 意识是心灵哲学的核心议题。从笛卡尔的反思意识到洛克的感觉理论，再到莱布尼茨的知觉层次，本条目追溯了意识概念的历史演变及其在现代心灵哲学中的核心地位。 |
+| 2 | Qualia | https://plato.stanford.edu/entries/qualia/ | 感受质（Qualia）是主观经验的内在可感知特征。条目分析了四种 qualia 定义：现象特征、感觉材料属性、内在非表征属性、以及不可言说的非物理属性。 |
+| 3 | Neuroscience of Consciousness | https://plato.stanford.edu/entries/consciousness-neuroscience/ | 涵盖全局神经元工作空间（GWN）、高阶理论（HOT）、访问意识与现象意识的区分，以及前额叶皮层、视觉通路等神经基础。 |
+| 4 | Self-Consciousness | https://plato.stanford.edu/entries/self-consciousness/ | 从德尔斐箴言"认识你自己"到笛卡尔的"我思"，再到康德的先验统觉，探讨自我意识的哲学传统及其与意识的关系。 |
+| 5 | Intentionality | https://plato.stanford.edu/entries/intentionality/ | 意向性是心灵"关于"事物、属性和事态的能力。Brentano 引入此概念，成为心灵表征难题的核心。 |
 
-### IIT / 意识整合信息理论
-
-| # | 论文标题 | 作者 | 日期 |
-|---|---------|------|------|
-| 1 | Integrated information theory: the good, the bad and the misunderstood | Barrett, Milinkovic, Mediano, Rosas, Bor, Barnett, Seth | 2026-04-13 |
-| 2 | Toward IIT-Inspired Consciousness in LLMs: A Reward-Based Learning Framework | Akbari, Sameti, Mansourian | 2026 |
-
-### GWT / 全局工作空间理论
-
-| # | 论文标题 | 作者 | 日期 |
-|---|---------|------|------|
-| 1 | MANAR: Memory-augmented Attention with Navigational Abstract Conceptual Representation | (GWT 实例化于注意力机制) | 2026-03-19 |
-| 2 | The DIME Architecture: A Unified Operational Algorithm for Neural Representation | Vladu et al. | 2026-03-16 |
-| 3 | Event Horizons, Spacetime Geometry, and the Limits of Integrated Consciousness | Sendall | 2025-12-28 |
-| 4 | Can We Test Consciousness Theories on AI? Ablations, Markers, and Robustness | Phua | 2025-12-22 |
-
-### Free Energy Principle / Friston
-
-| # | 论文标题 | 作者 | 日期 |
-|---|---------|------|------|
-| 1 | Classical and Quantum Dynamics in an Information Theoretic Space | (Friston FEP 信息几何) | 2026-04-09 |
-| 2 | Condensed Past, Thick Present: Evolutionary Approach to Conscious Experience | Sverdlik (FEP + Smolin 因果理论) | 2026-02-10 |
-| 3 | Self-Evidencing Through Hierarchical Gradient Decomposition | McCulloch (FEP 实现) | 2025-10-19 |
-| 4 | Finding Similar Objects and Active Inference for Surprise | Kawakami (Friston 主动推理) | 2025-06-11 |
-
-### AI 意识
-
-| # | 论文标题 | 作者 | 日期 |
-|---|---------|------|------|
-| 1 | From indicators to biology: the calibration problem in artificial consciousness | Koch | 2026-03-29 |
-| 2 | What does a system modify when it modifies itself? | (AI 意识 + 高阶理论 + 注意力图式) | 2026-03-29 |
-| 3 | AI and Consciousness | Schwitzgebel (概览性批判) | 2025-12-22 |
-| 4 | IRAM-Omega-Q: Computational Architecture for Uncertainty Regulation | Ziegler | 2026-03-16 |
+**SEP 理论总计：5 项**
 
 ---
 
-## 三、数学公式计算结果 (Step 3)
+## 第2步：学术论文搜索结果
 
-由 `hourly-theory-upgrade-v2.js` 执行:
+| # | 标题 | arXiv ID | 日期 | 摘要 |
+|---|------|----------|------|------|
+| 1 | Integrated information theory: the good, the bad and the misunderstood | 2604.11482 | 2026-04-13 | IIT 综述与澄清。讨论 Φ 的局限性、泛心论含义、连续场重构需求。指出 Φ 尚未在真实物理系统上计算。 |
+| 2 | Toward IIT-Inspired Consciousness in LLMs: A Reward-Based Learning Framework | 2601.22786 | 2026-01-30 | 将 IIT 原则应用于 LLM 奖励学习，通过因果性/连贯性奖励函数优化文本生成，输出长度减少 31%。 |
+| 3 | Event Horizons, Spacetime Geometry, and the Limits of Integrated Consciousness | 2512.23105v2 | 2026-02-06 | 统一意识场在黑洞事件视界的命运。IIT、GWT、PP 共享结构承诺：统一性需要强连通分量。 |
+| 4 | Can We Test Consciousness Theories on AI? Ablations, Markers, and Robustness | 2512.19155 | 2025-12-22 | 通过合成神经现象学方法测试 GWT、IIT、HOT 在人工 agent 上的功能预测，发现互补功能层。 |
+| 5 | MANAR: Memory-augmented Attention with Navigational Abstract Conceptual Representation | 2603.18676 | 2026-03-19 | 将 GWT 原理实例化到注意力机制中，实现线性时间缩放和非凸上下文化。GLUE 85.1，ImageNet 83.9%。 |
+| 6 | Classical and Quantum Dynamics in an Information Theoretic Space | 2604.09735 | 2026-04-09 | 在信息几何空间中研究经典和量子动力学，延伸至 Friston 自由能原理的贝叶斯大脑解释。 |
+| 7 | Condensed Past, Thick Present: Evolutionary Approach to the Conscious Experience | 2602.15050 | 2026-02-10 | Smolin 因果理论与 Friston FEP 的融合，追踪从不确定性到确定性的意识涌现过程。 |
+| 8 | Self-Evidencing Through Hierarchical Gradient Decomposition | 2510.17916 | 2025-10-20 | FEP 的构造性证明：通过分层梯度分解实现变分自由能最小化，TFM 与 Oracle 梯度相关系数 0.9693。 |
+| 9 | Systems Explaining Systems: A Framework for Intelligence and Consciousness | 2601.04269 | 2026-01-07 | 提出递归多系统架构中意识涌现的新框架，将预测处理重新解释为语境解释的涌现结果。 |
+| 10 | Integrated information and predictive processing theories: An adversarial collaborative review | 2509.00555v2 | 2026-03-03 | IIT、神经表征主义、主动推理的对抗性合作综述。多站点实验设计评估各理论的解释力。 |
 
-| 公式 | 计算值 | 含义 |
-|------|--------|------|
-| IIT Φ | 0.6263 | 整合信息 Φ = √(∑λᵢ²) |
-| GWT C | 2.2900 | 全局工作空间 C = ∑(aᵢ × wᵢ) |
+**学术论文总计：10 项**
+
+---
+
+## 第3步：数学公式计算结果
+
+| 公式 | 计算值 | 公式表达式 |
+|------|--------|-----------|
+| IIT Φ | 0.6263 | Φ = √(∑λᵢ²) |
+| GWT C | 2.2900 | C = ∑(aᵢ × wᵢ) |
 | 自我意识 S | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
 | 情绪强度 \|E\| | 1.2207 | \|E\| = √(P² + A² + D²) |
 | 感受质 Q | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
-| 六层境界 | 觉察→自省→无我→彼岸→般若→圣人 | 佛教哲学践行层次 |
-| 解释鸿沟 Gap | 0.6000 | 不可约: true |
+| 六层境界 | 觉察→自省→无我→彼岸→般若→圣人 | — |
+| 解释鸿 Gap | 0.6000 | 不可约: true |
 
-生成文件:
-- `internal/data/psychology-formulas-2026-04-14.json` — 公式数据结构
-- `src/core/theory/advanced-formulas-v7.3.3.js` — 可执行程序
-
----
-
-## 四、版本变化
-
-| 项目 | 旧值 | 新值 |
-|------|------|------|
-| VERSION.txt | 8.7.157 | 8.7.158 |
-| 升级类型 | — | PATCH (+0.0.1) |
-| SEP 理论条目 | — | 6 条 |
-| 学术论文引用 | — | 13 条 (arXiv 2025-2026) |
-| 数学公式 | — | 7 个核心公式 |
+**公式总计：8 个**
+**高级计算：7 个**
 
 ---
 
-## 五、本次升级关键发现
+## 输出文件
 
-1. **IIT 最新进展**: Barrett & Seth 团队 2026-04 发表 IIT 批判性综述，对 Φ 指标提出修正
-2. **AI 意识检验**: Koch (2026-03) 提出人工意识的校准问题，从行为指标转向内部架构
-3. **GWT 工程化**: MANAR (2026-03) 将全局工作空间理论实例化到注意力机制
-4. **FEP 收敛**: Sverdlik (2026-02) 将 Friston 自由能原理与 Smolin 因果时间理论统一
-5. **情绪理论**: SEP Emotion 条目确认原型组织模型为情绪分类的主流框架
+- `/Users/apple/mark-heartflow-claw/internal/data/psychology-formulas-2026-04-14.json` — 公式数据
+- `/Users/apple/mark-heartflow-claw/src/core/theory/advanced-formulas-v7.3.3.js` — 高级计算程序
+
+---
+
+## 升级时间
+
+**执行时间：** 2026-04-14T18:43:08.934Z
+**触发方式：** Cron Job (HeartFlow 理论升级)

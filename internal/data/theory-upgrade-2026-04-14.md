@@ -1,39 +1,30 @@
 # HeartFlow 理论升级报告
 
-**日期：** 2026-04-14
-**版本变化：** 8.7.130 → 8.7.131
+**日期**: 2026-04-14 22:25 (Asia/Shanghai)
+**版本**: 8.7.132 → 8.7.133
 
 ---
 
-## 一、SEP 哲学理论搜索结果
+## 一、SEP 哲学理论搜索（4 项）
 
-| # | 主题 | URL | 状态 |
+| # | 主题 | URL | 摘要 |
 |---|------|-----|------|
-| 1 | Consciousness (意识) | https://plato.stanford.edu/entries/consciousness/ | ✅ 成功访问 |
-| 2 | Qualia (感受质) | https://plato.stanford.edu/entries/qualia/ | ✅ 成功访问 |
-| 3 | Self-Consciousness (自我意识) | https://plato.stanford.edu/entries/self-consciousness/ | ✅ 成功访问 |
-| 4 | Intentionality (意向性) | https://plato.stanford.edu/entries/intentionality/ | ⚠️ DDG搜索失败，条目已知存在 |
-| 5 | Emotion (情绪) | https://plato.stanford.edu/entries/emotion/ | ⚠️ DDG搜索失败，条目已知存在 |
-
-**SEP 理论总计：5 项（3 项直接访问成功，2 项 SEP 标准条目）**
+| 1 | Consciousness | https://plato.stanford.edu/entries/consciousness/ | 意识的本质及其在自然中的位置，意识问题是心灵理论的核心议题 |
+| 2 | Qualia | https://plato.stanford.edu/entries/qualia/ | 感受质作为经验的现象特征，C.S. Peirce 1866年引入哲学的概念 |
+| 3 | Self-Consciousness | https://plato.stanford.edu/entries/self-consciousness/ | 自我意识的历史追溯至德尔斐箴言"认识你自己"，从亚里士多德到康特的讨论 |
+| 4 | Intentionality | https://plato.stanford.edu/entries/intentionality/ | 心灵指向对象的能力，Franz Brentano 引入哲学的表征难题 |
 
 ---
 
-## 二、学术论文搜索结果
+## 二、学术论文搜索（5 项来源）
 
-### arXiv 论文
-
-| # | 标题 | URL | 年份 | 领域 |
-|---|------|-----|------|------|
-| 1 | Integrated Information Theory: A Consciousness-First Approach to What Exists (Tononi & Boly) | https://arxiv.org/abs/2510.25998v4 | 2025 | IIT |
-| 2 | Is Consciousness Computable? Quantifying Integrated Information Using Algorithmic Information Theory (Maguire et al.) | https://arxiv.org/abs/1405.0126v1 | 2014 | IIT/计算 |
-| 3 | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace (Kavi et al.) | https://arxiv.org/abs/2408.15982v2 | 2024 | GWT/具身认知 |
-| 4 | A Case for AI Consciousness: Language Agents and Global Workspace Theory | https://arxiv.org/abs/2410.11407v1 | 2024 | GWT/AI意识 |
-| 5 | Some interesting observations on the free energy principle (Friston et al.) | https://arxiv.org/abs/2002.04501v1 | 2020 | 自由能原理 |
-| 6 | Emotions in the Loop: A Survey of Affective Computing for Emotional Support | https://arxiv.org/abs/2505.01542v1 | 2025 | 情感计算 |
-| 7 | BReG-NeXt: Facial Affect Computing Using Adaptive Residual Networks With Bounded Gradient | https://arxiv.org/abs/2004.08495v1 | 2020 | 情感计算/深度学习 |
-
-**论文总计：7 篇**
+| # | 来源 | URL | 发现 |
+|---|------|-----|------|
+| 1 | Nature Neuroscience | https://www.nature.com/search?q=global+workspace+theory+consciousness&date_range=2024-2026 | IIT 被指"伪科学"的辩论、意识研究超越理论测试、视觉意识的fMRI研究 |
+| 2 | PubMed | https://pubmed.ncbi.nlm.nih.gov/?term=integrated+information+theory+consciousness+2025 | 2025年45篇、2026年6篇相关论文，涵盖最小意识状态、意识与量子测量问题 |
+| 3 | arXiv q-bio.NC | https://arxiv.org/list/q-bio.NC/recent | 2026年4月14日6篇新论文，涉及神经认知科学前沿 |
+| 4 | arXiv (cross-list) | arXiv:2604.07745 (cs.AI) | AI与认知交叉研究 |
+| 5 | arXiv (cross-list) | arXiv:2604.08537 (cs.LG) | 机器学习与意识建模 |
 
 ---
 
@@ -48,21 +39,17 @@
 | 感受质 Q | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
 | 解释鸿沟 Gap | 0.6000 | 不可约: true |
 
-**六层境界：** 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人
+**六层境界**: 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人
+
+**生成文件**:
+- `internal/data/psychology-formulas-2026-04-14.json`
+- `src/core/theory/advanced-formulas-v7.3.3.js`
 
 ---
 
 ## 四、版本变化
 
-| 项目 | 旧版本 | 新版本 |
-|------|--------|--------|
-| VERSION.txt | 8.7.130 | 8.7.131 |
-| 变更类型 | - | PATCH (+0.0.1) |
-
----
-
-## 五、生成文件
-
-- `internal/data/psychology-formulas-2026-04-14.json` — 数学公式结果
-- `src/core/theory/advanced-formulas-v7.3.3.js` — 高级公式程序文件
-- `internal/data/theory-upgrade-2026-04-14.md` — 本报告
+- **旧版本**: 8.7.132
+- **新版本**: 8.7.133
+- **变更类型**: PATCH (+0.0.1)
+- **升级内容**: SEP理论4项 + 学术论文5项 + 数学公式8个计算完成

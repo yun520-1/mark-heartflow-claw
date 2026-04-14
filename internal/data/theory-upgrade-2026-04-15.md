@@ -1,78 +1,94 @@
 # HeartFlow 理论升级报告
 
 **日期**: 2026-04-15
-**触发**: Cron Job (HeartFlow v8.7.x 理论升级)
+**版本变化**: 8.7.198 → 8.7.199
 
 ---
 
-## 一、SEP 哲学理论搜索（Wikipedia / 百科索引）
+## 📚 第1步：SEP 哲学理论搜索结果
 
-| # | 主题 | 来源 | 关键发现 |
-|---|------|------|----------|
-| 1 | Consciousness Theory + SEP | Wikipedia → SEP 交叉引用 | Stanford Encyclopedia of Philosophy: Higher-order theories of consciousness (Peter Carruthers); Consciousness and Intentionality (Charles Siewert); Computational Theory of Mind |
-| 2 | Qualia Philosophy | Wikipedia → SEP 交叉引用 | SEP: Qualia (Michael Tye, 2021); Hard problem of consciousness; Stanford Encyclopedia of Philosophy entries on phenomenal experience |
-| 3 | Self-Consciousness Philosophy | Wikipedia | Self-consciousness vs self-awareness distinction; Pre-reflective self-consciousness (Shaun Gallagher); Philosophy of self and subjectivity |
-| 4 | Integrated Information Theory | Wikipedia / ArXiv | Tononi's IIT framework; Cause-effect power; Φ (Phi) metric; Intrinsic ontology |
-| 5 | Global Workspace Theory | Wikipedia / ArXiv | Neuronal global workspace; Consciousness as broadcast mechanism; Higher-order integration |
+| # | 主题 | URL | 摘要 |
+|---|------|-----|------|
+| 1 | Consciousness | https://plato.stanford.edu/entries/consciousness/ | 意识是当代心灵理论的核心议题，探讨意识的本质及其与非意识现实的关系 |
+| 2 | Qualia | https://plato.stanford.edu/entries/qualia/ | 感受质作为主观体验的现象特征，讨论内在非表征属性与感知的关系 |
+| 3 | Intentionality | https://plato.stanford.edu/entries/intentionality/ | 意向性——心灵表征事物、属性和事态的能力，Brentano 引入哲学的核心概念 |
+| 4 | Neuroscience of Consciousness | https://plato.stanford.edu/entries/consciousness-neuroscience/ | 意识的神经科学基础，涵盖全局神经元工作空间、高阶理论等 |
+| 5 | Emotion | https://plato.stanford.edu/entries/emotion/ | 情绪的哲学定义，描述性与规范性定义，原型化组织的情绪概念 |
+| 6 | Self-Consciousness | https://plato.stanford.edu/entries/self-consciousness/ | 自我意识的历史发展，从德尔斐神谕"认识你自己"到康德及后康德传统 |
 
-**SEP 交叉引用 URL**:
-- https://plato.stanford.edu/entries/consciousness/
-- https://plato.stanford.edu/entries/qualia/ (Tye, 2021)
-- https://plato.stanford.edu/entries/self-consciousness/
-- https://plato.stanford.edu/entries/intentionality/ (Siewert, 2017)
-- https://plato.stanford.edu/entries/consciousness-higher-order/ (Carruthers)
+**共计：6 篇 SEP 哲学理论**
 
 ---
 
-## 二、学术论文搜索（ArXiv API）
+## 📑 第2步：学术论文搜索结果 (arXiv)
 
-| # | 标题 | 年份 | URL | 摘要 |
-|---|------|------|-----|------|
-| 1 | Integrated Information Theory: A Consciousness-First Approach to What Exists | 2025 | https://arxiv.org/abs/2510.25998v4 | Tononi & Boly. IIT 的"意识优先"本体论方法，强调因果效应结构解释体验的所有属性 |
-| 2 | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace | 2024 | https://arxiv.org/abs/2408.15982v2 | Kavi et al. "thoughtseed"框架，结合自由能原理与全局工作空间理论的层次认知模型 |
-| 3 | A Case for AI Consciousness: Language Agents and Global Workspace Theory | 2024 | https://arxiv.org/abs/2410.11407v1 | 论证语言代理系统可能具有现象学意识，基于 GWT 框架 |
-| 4 | Is Consciousness Computable? Quantifying Integrated Information Using Algorithmic Information Theory | 2014 | https://arxiv.org/abs/1405.0126v1 | Maguire et al. 用算法信息理论量化整合信息，证明完全无损整合需要不可计算函数 |
-| 5 | Some interesting observations on the free energy principle | 2020 | https://arxiv.org/abs/2002.04501v1 | Friston & Da Costa & Parr. 自由能原理的技术讨论，马尔可夫毯与贝叶斯推断 |
-| 6 | Emotions in the Loop: A Survey of Affective Computing for Emotional Support | 2025 | https://arxiv.org/abs/2505.01542v1 | Hegde & Jayalath. 情感计算综述，LLM 与多模态情感识别、情绪支持系统 |
-| 7 | Knowledge as Fruits of Ignorance: A global Free Energy Principle | 2022 | https://arxiv.org/abs/2206.05684v1 | 全局自由能原理作为认知思维框架 |
-| 8 | BReG-NeXt: Facial Affect Computing Using Adaptive Residual Networks | 2020 | https://arxiv.org/abs/2004.08495v1 | 面部情感计算的自适应残差网络方法 |
+### 整合信息理论 (IIT)
+| # | 论文标题 | 作者 | 日期 |
+|---|----------|------|------|
+| 1 | Integrated information theory: the good, the bad and the misunderstood | Barrett, Milinkovic, Mediano, Rosas et al. | 2026-04-13 |
+| 2 | Toward IIT-Inspired Consciousness in LLMs: A Reward-Based Learning Framework | Akbari, Sameti, Mansourian | 2026 |
+| 3 | Event Horizons, Spacetime Geometry, and the Limits of Integrated Consciousness | Sendall | 2025-12-28 |
+| 4 | Can We Test Consciousness Theories on AI? Ablations, Markers, and Robustness | Phua | 2025-12-22 |
 
----
+### 全局工作空间理论 (GWT)
+| # | 论文标题 | 作者 | 日期 |
+|---|----------|------|------|
+| 1 | MANAR: Memory-augmented Attention with Navigational Abstract Conceptual Representation | — | 2026-03-19 |
+| 2 | The DIME Architecture: A Unified Operational Algorithm for Neural Representation, Dynamics, Control and Integration | Vladu, Bizdoaca et al. | 2026-03-16 |
 
-## 三、数学公式计算结果
+### 自由能原理 (FEP)
+| # | 论文标题 | 作者 | 日期 |
+|---|----------|------|------|
+| 1 | Condensed Past, Thick Present: Evolutionary Approach to the Conscious Experience | — (融合 Smolin CTV + Friston FEP) | 2026-02-10 |
+| 2 | Self-orthogonalizing attractor neural networks emerging from the free energy principle | Spisak, Friston | 2025-05-28 |
+| 3 | Meta-Representational Predictive Coding: Biomimetic Self-Supervised Learning | Ororbia, Friston, Rao | 2025-03-22 |
 
-由 `hourly-theory-upgrade-v2.js` 执行：
+### 情感计算 (Affective Computing)
+| # | 论文标题 | 作者 | 日期 |
+|---|----------|------|------|
+| 1 | Persona-E²: A Human-Grounded Dataset for Personality-Shaped Emotional Responses | Yang, Zhou et al. | 2026-04-10 |
+| 2 | Beyond the Mean: Modelling Annotation Distributions in Continuous Affect Prediction | — | 2026-04-08 |
+| 3 | Busemann energy-based attention for emotion analysis in Poincaré discs | Kapić, Jaćimović | 2026-04-08 |
 
-| 公式 | 计算值 | 说明 |
-|------|--------|------|
-| IIT Φ | 0.6263 | Φ = √(∑λᵢ²) — 整合信息度量 |
-| GWT C | 2.2900 | C = ∑(aᵢ × wᵢ) — 全局工作空间整合度 |
-| 自我意识 S | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² — 递归自指模型 |
-| 情绪强度 \|E\| | 1.2207 | \|E\| = √(P² + A² + D²) — PAD 情绪空间 |
-| 感受质 Q | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt — 感受质衰减积分 |
-| 六层境界 | 觉察→自省→无我→彼岸→般若→圣人 | 意识层次递进 |
-| 解释鸿沟 Gap | 0.6000 | 不可约: true — 意识硬问题不可消解 |
-
----
-
-## 四、版本变化
-
-| 项目 | 变更前 | 变更后 |
-|------|--------|--------|
-| VERSION.txt | 8.7.196 | **8.7.197** |
-| 变更类型 | — | PATCH (+0.0.1) |
-| 生成文件 | — | psychology-formulas-2026-04-14.json |
-| 高级公式 | — | advanced-formulas-v7.3.3.js |
+**共计：13 篇学术论文**
 
 ---
 
-## 五、搜索统计
+## 🧮 第3步：数学公式计算结果
 
-- **SEP 理论条目**: 5 项
-- **学术论文**: 8 篇（ArXiv）
-- **数学公式**: 8 个
-- **高级计算**: 7 项
+| 公式 | 结果 | 计算式 |
+|------|------|--------|
+| IIT Φ (整合信息) | **0.6263** | Φ = √(∑λᵢ²) |
+| GWT C (全局工作空间容量) | **2.2900** | C = ∑(aᵢ × wᵢ) |
+| 自我意识 S | **0.7945** | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
+| 情绪强度 \|E\| | **1.2207** | \|E\| = √(P² + A² + D²) |
+| 感受质 Q | **1.2359** | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
+| 解释鸿沟 Gap | **0.6000** | 不可约: true |
+
+**六层境界**: 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人
+
+**高级计算项**: 7 个
+**公式总数**: 8 个
 
 ---
 
-*报告自动生成于 2026-04-15T07:35 CST*
+## 📦 第4步：文件产物
+
+- 公式数据: `internal/data/psychology-formulas-2026-04-14.json`
+- 高级公式模块: `src/core/theory/advanced-formulas-v7.3.3.js`
+
+---
+
+## 📋 版本变化
+
+| 项目 | 旧值 | 新值 |
+|------|------|------|
+| 版本号 | 8.7.198 | 8.7.199 |
+| 变更类型 | — | PATCH |
+| SEP 理论 | — | 6 篇 |
+| 学术论文 | — | 13 篇 |
+| 数学公式 | — | 8 个 |
+
+---
+
+*HeartFlow 理论升级完成 — 2026-04-15*

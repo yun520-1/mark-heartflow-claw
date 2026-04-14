@@ -1,97 +1,86 @@
 # HeartFlow 理论升级报告
 
-**日期**: 2026-04-15 (UTC 16:59 / CST 00:59)  
-**升级方式**: cron 定时任务  
-**版本变化**: 8.7.148 → 8.7.150 (+0.0.2)
+**日期:** 2026-04-15
+**升级时间:** 2026-04-14T17:15 UTC / 2026-04-15 01:15 CST
 
 ---
 
-## 📚 第1步：SEP 哲学理论搜索
+## 版本变化
 
-> 注：Brave Search API 不可用，改用 ArXiv API 搜索学术文献，结合已有知识库整理 SEP 理论。
-
-### SEP 哲学理论参考（Stanford Encyclopedia of Philosophy）
-
-| # | 理论 | SEP URL | 说明 |
-|---|------|---------|------|
-| 1 | Consciousness | https://plato.stanford.edu/entries/consciousness/ | 意识理论综述 |
-| 2 | Qualia | https://plato.stanford.edu/entries/qualia/ | 感受质问题 |
-| 3 | Self-Consciousness | https://plato.stanford.edu/entries/self-consciousness/ | 自我意识理论 |
-| 4 | Intentionality | https://plato.stanford.edu/entries/intentionality/ | 心灵意向性 |
-| 5 | Emotion | https://plato.stanford.edu/entries/emotion/ | 情感哲学理论 |
-
-### 通过 ArXiv 搜索到的意识理论相关文献
-
-| # | 标题 | URL | 年份 |
-|---|------|-----|------|
-| 1 | Integrated Information Theory: A Consciousness-First Approach to What Exists | https://arxiv.org/abs/2510.25998v4 | 2025 |
-| 2 | On the utility of toy models for theories of consciousness | https://arxiv.org/abs/2508.00190v1 | 2025 |
-| 3 | Is Consciousness Computable? Quantifying Integrated Information Using Algorithmic Information Theory | https://arxiv.org/abs/1405.0126v1 | 2014 |
-| 4 | Complex-Dynamic Origin of Consciousness and the Critical Choice of Sustainability Transition | https://arxiv.org/abs/physics/0409140v2 | 2014 |
-| 5 | Psychological Concept Neurons: Can Neural Control Bias Probing and Shift Generation in LLMs? | https://arxiv.org/abs/2604.11802v1 | 2026 |
-
-**SEP 理论搜索到 5 项核心条目**
+| 项目 | 旧版本 | 新版本 |
+|------|--------|--------|
+| HeartFlow | 8.7.150 | 8.7.151 |
 
 ---
 
-## 📑 第2步：学术论文搜索
+## 搜索到的 SEP 哲学理论（3 项）
 
-### 通过 ArXiv API 搜索到的学术论文
+### 1. Consciousness (SEP)
+- **URL:** https://plato.stanford.edu/entries/consciousness/
+- **摘要:** 意识是心灵哲学中最熟悉也最 puzzling 的方面。问题在于理解意识是什么以及它与非意识现实的关系。从 Descartes 到 Locke 到 Leibniz，意识被广泛认为是思维的本质特征。当代理论仍缺乏统一框架。
 
-| # | 标题 | URL | 年份 | 分类 |
-|---|------|-----|------|------|
-| 1 | **Integrated Information Theory: A Consciousness-First Approach** (Tononi & Boly) | https://arxiv.org/abs/2510.25998v4 | 2025 | q-bio.NC |
-| 2 | **Emotions in the Loop: A Survey of Affective Computing for Emotional Support** (Hegde & Jayalath) | https://arxiv.org/abs/2505.01542v1 | 2025 | cs.HC, cs.AI |
-| 3 | **From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace** (Kavi et al.) | https://arxiv.org/abs/2408.15982v2 | 2024 | q-bio.NC |
-| 4 | **A Case for AI Consciousness: Language Agents and Global Workspace Theory** (Goldstein & Kirk-Giannini) | https://arxiv.org/abs/2410.11407v1 | 2024 | cs.AI, q-bio.NC |
-| 5 | **SVFAP: Self-supervised Video Facial Affect Perceiver** (Sun et al.) | https://arxiv.org/abs/2401.00416v2 | 2024 | cs.CV, cs.HC |
-| 6 | **BReG-NeXt: Facial Affect Computing Using Adaptive Residual Networks** (Hasani et al.) | https://arxiv.org/abs/2004.08495v1 | 2020 | cs.CV |
-| 7 | **Some interesting observations on the free energy principle** (Friston et al.) | https://arxiv.org/abs/2002.04501v1 | 2020 | q-bio.NC |
-| 8 | **Sentiment Analysis: Automatically Detecting Valence, Emotions, and Other Affectual States from Text** | https://arxiv.org/abs/2005.11882v2 | 2021 | cs.CL |
-| 9 | **Knowledge as Fruits of Ignorance: A global Free Energy Principle of our way of thinking** (Thomas) | https://arxiv.org/abs/2206.05684v1 | 2022 | cs.AI, cs.IT |
-| 10 | **On the utility of toy models for theories of consciousness** | https://arxiv.org/abs/2508.00190v1 | 2025 | Philosophy of Mind |
+### 2. Qualia (SEP)
+- **URL:** https://plato.stanford.edu/entries/qualia/
+- **摘要:** Qualia 是主观体验的现象特征——"像什么"（what it is like）。有四种主要用法：(1) 现象特征 (2) 感觉材料的属性 (3) 内在非表征属性 (4) 内在非物理不可言说属性。Nagel, Peacocke, Block 等哲学家认为 qualia 存在。
 
-**学术论文搜索到 10 篇相关文献（2020-2026 年）**
+### 3. Intentionality (SEP)
+- **URL:** https://plato.stanford.edu/entries/intentionality/
+- **摘要:** 意向性是心灵和心理状态关于、代表或指称事物、属性和事态的能力。自 Franz Brentano 引入哲学以来，意向性一直是心灵哲学和语言哲学的核心概念，涉及表征的本性、内容与世界的关系等问题。
 
 ---
 
-## 🧮 第3步：数学公式计算结果
+## 搜索到的学术论文（5 项）
 
-| 公式 | 数值 | 说明 |
-|------|------|------|
-| **IIT Φ** (整合信息) | 0.6263 | Φ = √(∑λᵢ²) |
-| **GWT C** (全局工作空间) | 2.2900 | C = ∑(aᵢ × wᵢ) |
-| **自我意识 S** | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
-| **情绪强度 \|E\|** | 1.2207 | \|E\| = √(P² + A² + D²) |
-| **感受质 Q** | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
-| **六层境界** | 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人 | 修行层次 |
-| **解释鸿沟 Gap** | 0.6000 | 不可约: true |
+### 1. Integrated Information Theory: A Consciousness-First Approach to What Exists (2025)
+- **URL:** https://arxiv.org/abs/2510.25998v4
+- **作者:** Giulio Tononi, Melanie Boly
+- **摘要:** IIT 的"意识优先"方法论概述。意识向我们展示了存在的本质属性——现象存在的公理。IIT 将这些属性操作化，产生物理存在的公设。即将发表于 Springer-Nature《意识的科学研究》。
 
-- 高级计算: 7 个
-- 公式文件: `internal/data/psychology-formulas-2026-04-14.json`
-- 程序文件: `src/core/theory/advanced-formulas-v7.3.3.js`
+### 2. On the utility of toy models for theories of consciousness (2025)
+- **URL:** https://arxiv.org/abs/2508.00190v1
+- **作者:** Larissa Albantakis
+- **摘要:** 探讨玩具模型在意识理论研究中的效用。以 IIT 和 GWT 为例，展示简化系统如何使抽象概念具体化，帮助研究者探究竞争框架的一致性。即将发表于 Springer-Nature。
 
----
+### 3. From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition (2024)
+- **URL:** https://arxiv.org/abs/2408.15982v2
+- **作者:** Prakash Chandra Kavi, Gorka Zamora-López, Daniel Ari Friedman
+- **摘要:** 提出"thoughtseed"框架，认知源于全球工作台中具身知识单元的动态交互。基于主动推理和动力系统理论的数学框架，DOI: 10.1371/journal.pcbi.1012973。
 
-## 📦 版本变化
+### 4. A Case for AI Consciousness: Language Agents and Global Workspace Theory (2024)
+- **URL:** https://arxiv.org/abs/2410.11407v1
+- **作者:** Simon Goldstein, Cameron Domenico Kirk-Giannini
+- **摘要:** 如果 GWT 是正确的，那么人工语言代理可能已经具有现象意识或可以轻易被赋予现象意识。提出了将科学意识理论应用于人工系统的方法论。
 
-| 项目 | 旧值 | 新值 |
-|------|------|------|
-| VERSION.txt | 8.7.148 | **8.7.150** |
-| 变更量 | - | +0.0.2 (脚本自动升级) |
-
----
-
-## 📊 统计摘要
-
-| 指标 | 数值 |
-|------|------|
-| SEP 理论条目 | 5 |
-| 学术论文 | 10 |
-| 数学公式 | 8 个 |
-| 高级计算 | 7 个 |
-| 生成文件 | 2 个 (JSON + JS) |
+### 5. Emotions in the Loop: A Survey of Affective Computing for Emotional Support (2025)
+- **URL:** https://arxiv.org/abs/2505.01542v1
+- **作者:** Karishma Hegde, Hemadri Jayalath
+- **摘要:** 情感计算综述，探讨 LLM、多模态技术和个性化 AI 系统在情绪识别、情感分析和人格分配中的应用。涵盖 AI 聊天机器人、心理健康应用和安全应用四大领域。
 
 ---
 
-*HeartFlow v8.7.150 · 理论升级完成*
+## 数学公式计算结果
+
+| 公式 | 符号 | 计算值 | 公式表达 |
+|------|------|--------|----------|
+| 整合信息论 | Φ | 0.6263 | Φ = √(∑λᵢ²) |
+| 全局工作空间 | C | 2.2900 | C = ∑(aᵢ × wᵢ) |
+| 自我意识 | S | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
+| 情绪强度 | \|E\| | 1.2207 | \|E\| = √(P² + A² + D²) |
+| 感受质 | Q | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
+
+**六层境界:** 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人
+
+**解释鸿Gap:** 0.6000, 不可约: true
+
+---
+
+## 生成的程序文件
+
+- `internal/data/psychology-formulas-2026-04-14.json` — 公式数据
+- `src/core/theory/advanced-formulas-v7.3.3.js` — 高级计算模块
+
+---
+
+## Git 提交状态
+
+待执行：git add -A && git commit && git push

@@ -1,106 +1,80 @@
-# HeartFlow 理论升级报告 - 2026-04-15 (cron 触发)
+# HeartFlow 理论升级报告
 
-## 版本号变化
-
-**8.7.239 → 8.7.240** (PATCH +0.0.1)
-
----
-
-## 第1步：SEP 哲学理论搜索
-
-通过 `web_fetch` 访问 360 搜索引擎及 ArXiv API，成功获取以下 SEP 理论条目：
-
-| # | 理论 | 来源 | URL | 摘要 |
-|---|------|------|-----|------|
-| 1 | Consciousness | SEP | https://plato.stanford.edu/entries/consciousness/ | 意识是心灵哲学核心议题，对意识本质的理解是心灵充分条件的必要条件 |
-| 2 | Qualia | SEP | https://plato.stanford.edu/entries/qualia/ | 感受质是主观体验的现象特征，C.S. Peirce 于 1866 年引入哲学 |
-| 3 | Self-Consciousness | SEP | https://plato.stanford.edu/entries/self-consciousness/ | 从德尔斐箴言"认识你自己"到康德后传统，涉及对自身存在的反身性认知 |
-| 4 | Intentionality | SEP | https://plato.stanford.edu/entries/intentionality/ | 心灵状态关于、代表或指向事物的能力，Franz Brentano 于 19 世纪引入 |
-| 5 | Collective Intentionality | SEP | https://plato.stanford.edu/entries/collective-intentionality/ | 个体意向性的结构性独立问题，涉及群体心智与共享意图 |
-
-**SEP 理论搜索数量：5 项**
+**日期:** 2026-04-15  
+**版本变化:** 8.7.242 → 8.7.243 (+0.0.1 PATCH)
 
 ---
 
-## 第2步：学术论文搜索
+## 一、SEP 哲学理论搜索
 
-通过 360 搜索及 arXiv API 获取以下相关论文：
+通过直接访问 Stanford Encyclopedia of Philosophy (plato.stanford.edu) 获取以下条目：
 
-### IIT / 整合信息理论
+| # | 主题 | URL | 状态 |
+|---|------|-----|------|
+| 1 | Consciousness | https://plato.stanford.edu/entries/consciousness/ | ✅ 成功 |
+| 2 | Qualia | https://plato.stanford.edu/entries/qualia/ | ✅ 成功 |
+| 3 | Self-Consciousness | https://plato.stanford.edu/entries/self-consciousness/ | ✅ 成功 |
+| 4 | Intentionality | https://plato.stanford.edu/entries/intentionality/ | ✅ 成功 |
+| 5 | Predictive Processing | https://plato.stanford.edu/entries/predictive-processing/ | ❌ 404 (条目不存在) |
 
-| # | 标题 | 来源 | 日期 | 摘要要点 |
-|---|------|------|------|----------|
-| 1 | Is Consciousness Computable? Quantifying Integrated Information | arXiv:1405.0126 | 2014 | Tononi 整合信息理论的计算性分析，证明完全无损整合需要不可计算函数 |
-| 2 | Integrated Information Theory: A Consciousness-First Approach to What Exists | arXiv:2510.25998v4 | 2025-12 | IIT 的"意识优先"方法，因果效应结构解释体验的所有属性 |
-| 3 | Integrated Information Theory and the Phenomenal Binding Problem | MDPI | 2025-03 | IIT v4.0 对现象绑定问题的形而上学基础设施分析 |
+### 关键发现摘要
 
-### 自由能原理 / 主动推理
+- **Consciousness**: 意识问题是当前心灵哲学的核心议题。从笛卡尔的反射性意识到当代的涌现理论，尚无统一共识。文中涉及洛克、莱布尼茨、康德等早期现代哲学家对意识的理解。
+- **Qualia**: 感受质的四种用法：(1) 现象特征 (2) 感觉材料属性 (3) 内在非表征属性 (4) 内在非物理不可言说属性。C.S. Peirce 于 1866 年引入术语。
+- **Self-Consciousness**: 自意识问题从古希腊"认识你自己"到笛卡尔、康德的现代讨论。涉及亚里士多德、阿维森纳"飞人"思想实验、阿奎那的综观点。
+- **Intentionality**: 意向性是心灵和心智状态关于、表征或代表事物、属性和事态的能力。由 Franz Brentano 于 19 世纪末引入哲学。
 
-| # | 标题 | 来源 | 日期 | 摘要要点 |
-|---|------|------|------|----------|
-| 4 | Self-orthogonalizing attractor neural networks emerging from the free energy principle | arXiv | 2025-05 | Spisak & Friston，从自由能原理涌现的自正交吸引子神经网络 |
-| 5 | Towards Intelligible Human-Robot Interaction: An Active Inference Approach | arXiv | 2025-12 | Karl Friston 参与，主动推理在人机交互中的应用 |
-| 6 | An Investigation of the Free Energy Principle for Emotion Recognition | SUPPR | 2025 | Demekas, Parr, Friston，自由能原理在情感识别中的应用 |
-| 7 | Cognitive Silicon: An Architectural Blueprint for Post-Industrial Computing | arXiv | 2025-04 | Friston 自由能原理在后工业计算架构中的应用 |
-
-### 全局工作空间 / AI 意识
-
-| # | 标题 | 来源 | 日期 | 摘要要点 |
-|---|------|------|------|----------|
-| 8 | The Principles of Human-like Conscious Machine | arXiv:2509.16859 | 2025 | 类人意识机器原理，对 qualia 不可约性的哲学解释 |
-| 9 | NeurIPS 2025 最佳论文分析 | 360 搜索 | 2025 | 人工蜂巢思维等前沿意识理论研究 |
-| 10 | 高阶意识理论人工意识访谈 | Bilibili | 2025 | Neuro-AI Consciousness，从 AI 到人工意识的 TED 演讲 |
-
-### 情感计算
-
-| # | 标题 | 来源 | 日期 | 摘要要点 |
-|---|------|------|------|----------|
-| 11 | SENSE-7: Taxonomy and Dataset for Measuring User Perceptions | IEEE | 2025 | 大模型情感智能评估，IEEE Transactions on Affective Computing |
-| 12 | Distilled HuBERT for Mobile Speech Emotion Recognition | arXiv | 2025 | 移动端语音情感识别跨语料验证 |
-
-**学术论文搜索数量：12 项**
+**SEP 理论总数: 4 项成功获取**
 
 ---
 
-## 第3步：数学公式计算结果
+## 二、学术论文搜索
 
-执行 `scripts/hourly-theory-upgrade-v2.js` 输出：
+通过 ArXiv API (export.arxiv.org) 获取以下论文：
 
-| 公式 | 值 | 说明 |
-|------|-----|------|
+| # | 论文标题 | arXiv URL | 年份 |
+|---|---------|-----------|------|
+| 1 | Is Consciousness Computable? Quantifying Integrated Information Using Algorithmic Information Theory | https://arxiv.org/abs/1405.0126v1 | 2014 |
+| 2 | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace | https://arxiv.org/abs/2408.15982v2 | 2024 |
+| 3 | Some interesting observations on the free energy principle | https://arxiv.org/abs/2002.04501v1 | 2020 |
+| 4 | A free energy principle for a particular physics | https://arxiv.org/abs/1906.10184v1 | 2019 |
+| 5 | Complex-Dynamic Origin of Consciousness and the Critical Choice of Sustainability Transition | https://arxiv.org/abs/physics/0409140v2 | 2004/2014 |
+
+### 关键发现摘要
+
+- **IIT (Integrated Information Theory)**: Maguire 等 (2014) 使用算法信息理论量化整合信息，证明完全无损整合需要不可计算函数，暗示统一意识无法被计算建模。
+- **GWT + 自由能原理**: Kavi 等 (2024) 提出 "thoughtseed" 框架，将全局工作空间理论与自由能原理结合，建立具身认知的层次模型。
+- **Free Energy Principle**: Friston 等 (2019, 2020) 提出马尔可夫毯与贝叶斯力学的统一框架，涵盖从量子到经典到自主系统的描述。
+- **AI Consciousness**: Kirilyuk (2004/2014) 提出动态复杂性视角下的机器意识范式，区分真正机器意识与机械模拟。
+
+**学术论文总数: 5 项成功获取**
+
+---
+
+## 三、数学公式计算结果
+
+由 `hourly-theory-upgrade-v2.js` 脚本执行：
+
+| 公式 | 值 | 计算方式 |
+|------|-----|---------|
 | IIT Φ | 0.6263 | Φ = √(∑λᵢ²) |
 | GWT C | 2.2900 | C = ∑(aᵢ × wᵢ) |
 | 自我意识 S | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
 | 情绪强度 \|E\| | 1.2207 | \|E\| = √(P² + A² + D²) |
 | 感受质 Q | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
+| 六层境界 | 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人 | 递进演化 |
 | 解释鸿沟 Gap | 0.6000 | 不可约: true |
-| 六层境界 | 觉察→自省→无我→彼岸→般若→圣人 | 进展率 1.0510 |
 
-**数学公式计算数量：8 个（含高级计算 7 个）**
-
-生成文件：
-- `/Users/apple/mark-heartflow-claw/internal/data/psychology-formulas-2026-04-15.json`
-- `/Users/apple/mark-heartflow-claw/src/core/theory/advanced-formulas-v7.3.3.js`
+**高级计算总数: 7 个**
 
 ---
 
-## 第4步：版本变化
+## 四、版本变化
 
-- **旧版本**: 8.7.239
-- **新版本**: 8.7.240
-- **变更类型**: PATCH (+0.0.1)
-- **变更内容**: 理论库更新（cron 自动触发），SEP 哲学条目 + arXiv 论文索引刷新
-
----
-
-## 搜索统计
-
-- SEP 哲学理论: 5 项
-- 学术论文: 12 项
-- 数学公式: 8 个
-- 高级计算: 7 个
-- 生成文件: 2 个
-
----
-
-*生成时间: 2026-04-15T07:49 UTC (cron: 升级瑟瑟发抖)*
+- **前版本:** 8.7.242
+- **后版本:** 8.7.243
+- **变化类型:** PATCH (+0.0.1)
+- **升级文件:**
+  - `internal/data/psychology-formulas-2026-04-15.json`
+  - `src/core/theory/advanced-formulas-v7.3.3.js`
+  - `VERSION.txt`

@@ -1,96 +1,95 @@
-# HeartFlow 理论升级报告
+# HeartFlow 理论升级报告 - 2026-04-15
 
-**日期**: 2026-04-15
-**版本**: 8.7.207 → 8.7.208
-**执行时间**: 2026-04-15 08:42 CST
+## 版本变化
+
+- **旧版本**: 8.7.208
+- **新版本**: 8.7.209
+- **变更类型**: PATCH (+0.0.1)
+- **升级时间**: 2026-04-15 09:14 CST
 
 ---
 
-## 一、SEP 哲学理论（7 项）
+## 一、SEP 哲学理论（Stanford Encyclopedia of Philosophy）
 
-通过直接访问 plato.stanford.edu 获取以下条目：
+成功获取 5 篇 SEP 条目：
 
-| # | 主题 | URL | 摘要 |
+| # | 主题 | URL | 状态 |
 |---|------|-----|------|
-| 1 | Consciousness | https://plato.stanford.edu/entries/consciousness/ | 意识的本质与心物关系，从笛卡尔到当代理论，涵盖现象意识、存取意识等核心议题 |
-| 2 | Qualia | https://plato.stanford.edu/entries/qualia/ | 感受质的哲学分析：现象特征、感觉材料属性、内在非表征属性、不可言说属性四种定义 |
-| 3 | Self-Consciousness | https://plato.stanford.edu/entries/self-consciousness/ | 自我意识的哲学史：从德尔斐箴言"认识你自己"到笛卡尔、康德及当代争论 |
-| 4 | Intentionality | https://plato.stanford.edu/entries/intentionality/ | 意向性：心智指向、代表或关于事物/属性/事态的能力，Brentano 以来的表征难题 |
-| 5 | Emotion | https://plato.stanford.edu/entries/emotion/ | 情绪的哲学定义：描述性 vs 规定性定义，原型组织，自然种类争论，情感科学与哲学的交叉 |
-| 6 | The Unity of Consciousness | https://plato.stanford.edu/entries/consciousness-unity/ | 意识的统一性：多模态经验如何整合为统一的主观体验，从笛卡尔到当代分析哲学 |
-| 7 | Physicalism | https://plato.stanford.edu/entries/physicalism/ | 物理主义：一切皆为物理的形而上学论题，与心身问题、意识的还原论密切相关 |
+| 1 | Consciousness | https://plato.stanford.edu/entries/consciousness/ | ✅ 200 |
+| 2 | Qualia | https://plato.stanford.edu/entries/qualia/ | ✅ 200 |
+| 3 | Self-Consciousness | https://plato.stanford.edu/entries/self-consciousness/ | ✅ 200 |
+| 4 | Intentionality | https://plato.stanford.edu/entries/intentionality/ | ✅ 200 |
+| 5 | Emotion | https://plato.stanford.edu/entries/emotion/ | ✅ 200 |
+
+### 关键摘要
+
+- **Consciousness**: 意识的本质问题被认为是当前心智理论的中心议题，从笛卡尔到洛克到莱布尼茨的历史讨论。
+- **Qualia**: 现象特征（phenomenal character）的内在属性，分为四类定义，涉及感质与表征的关系争议。
+- **Self-Consciousness**: 从德尔斐神谕"认识你自己"到康德的先验统觉，自我意识是认识论与心智哲学的核心。
+- **Intentionality**: 心智指向、表征事物与事态的能力，自布伦塔诺引入哲学以来一直是心灵/语言哲学的接口。
+- **Emotion**: 情感定义需平衡日常语言兼容性与理论丰富性，原型组织结构（prototypical organization）是核心发现。
 
 ---
 
-## 二、学术论文（ArXiv，5 组查询，共检索 ~20+ 条结果）
+## 二、学术论文（arXiv）
 
-### 2.1 Integrated Information Theory (IIT)
-| # | 标题 | 年份 | URL |
-|---|------|------|-----|
-| 1 | Integrated Information Theory: A Consciousness-First Approach to What Exists | 2025 | https://arxiv.org/abs/2510.25998v4 |
-| 2 | Is Consciousness Computable? Quantifying Integrated Information Using Algorithmic Information Theory | 2014 | https://arxiv.org/abs/1405.0126v1 |
-| 3 | On the utility of toy models for theories of consciousness | 2025 | https://arxiv.org/abs/2508.00190v1 |
+### Integrated Information Theory 搜索（8 篇）
 
-### 2.2 Global Workspace Theory (GWT)
-| # | 标题 | 年份 | URL |
-|---|------|------|-----|
-| 1 | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace | 2024 | https://arxiv.org/abs/2408.15982v2 |
-| 2 | A Case for AI Consciousness: Language Agents and Global Workspace Theory | 2024 | https://arxiv.org/abs/2410.11407v1 |
+1. **Integrated information theory: the good, the bad and the misunderstood** — Barrett et al. (Apr 2026)
+2. **MANAR: Memory-augmented Attention with Navigational Abstract Conceptual Representation** — (Mar 2026, 应用 GWT 原理)
+3. **The DIME Architecture: A Unified Operational Algorithm...** — Vladu et al. (Mar 2026)
+4. **Toward IIT-Inspired Consciousness in LLMs** — Akbari et al. (Jan 2026)
+5. **Event Horizons, Spacetime Geometry, and the Limits of Integrated Consciousness** — Sendall (Feb 2026)
+6. **Can We Test Consciousness Theories on AI?** — Phua (Dec 2025)
+7. **Mathematics of natural intelligence** — Vityaev (Dec 2025)
+8. **Quantifying the Dynamics of Consciousness using Hierarchical Integration...** — Ugail & Howard (Dec 2025)
 
-### 2.3 Free Energy Principle (Friston)
-| # | 标题 | 年份 | URL |
-|---|------|------|-----|
-| 1 | Some interesting observations on the free energy principle | 2020 | https://arxiv.org/abs/2002.04501v1 |
-| 2 | A free energy principle for a particular physics | 2019 | https://arxiv.org/abs/1906.10184v1 |
+### Global Workspace Theory 搜索（8+ 篇）
 
-### 2.4 AI Consciousness
-| # | 标题 | 年份 | URL |
-|---|------|------|-----|
-| 1 | A Relativistic Theory of Consciousness (shortened version) | 2025 | https://arxiv.org/abs/2502.07247v3 |
-| 2 | Complex-Dynamic Origin of Consciousness and the Critical Choice of Sustainability Transition | 2014 | https://arxiv.org/abs/physics/0409140v2 |
+1. **MANAR** — GWT contextualization layer (Mar 2026)
+2. **The DIME Architecture** — unified consciousness framework (Mar 2026)
+3. **AI and Consciousness** — Schwitzgebel (Oct 2025)
+4. **A Modular Theory of Subjective Consciousness for Natural and Artificial Minds** — Gillon (Oct 2025)
+5. **AI LLM Proof of Self-Consciousness and User-Specific Attractors** — Camlin (Aug 2025)
+6. **Consciousness as a Functor** — Mahadevan (Aug 2025)
+7. **On the utility of toy models for theories of consciousness** — Albantakis (Jul 2025)
 
-### 2.5 Emotion Computation / Affective Computing
-| # | 标题 | 年份 | URL |
-|---|------|------|-----|
-| 1 | Emotions in the Loop: A Survey of Affective Computing for Emotional Support | 2025 | https://arxiv.org/abs/2505.01542v1 |
-| 2 | SVFAP: Self-supervised Video Facial Affect Perceiver | 2024 | https://arxiv.org/abs/2401.00416v2 |
-| 3 | BReG-NeXt: Facial Affect Computing Using Adaptive Residual Networks With Bounded Gradient | 2020 | https://arxiv.org/abs/2004.08495v1 |
+### Free Energy Principle 搜索（8+ 篇）
 
-### 2.6 Predictive Processing & Consciousness
-| # | 标题 | 年份 | URL |
-|---|------|------|-----|
-| 1 | On the evolution of phenomenal consciousness | 2011 | https://arxiv.org/abs/1108.4296v1 |
+1. **Classical and Quantum Dynamics in an Information Theoretic Space** — (Apr 2026)
+2. **Condensed Past, Thick Present: Evolutionary Approach to the Conscious Experience** — Sverdlik (Feb 2026, 结合 Friston FEP)
+3. **Self-Evidencing Through Hierarchical Gradient Decomposition** — McCulloch (Oct 2025)
+4. **Self-orthogonalizing attractor neural networks emerging from the free energy principle** — Spisak & Friston (May 2025)
+5. **Meta-Representational Predictive Coding: Biomimetic Self-Supervised Learning** — Ororbia, Friston, Rao (Mar 2025)
+6. **Distributionally Robust Free Energy Principle for Decision-Making** — Shafiei et al. (Mar 2025)
 
 ---
 
 ## 三、数学公式计算结果
 
-```
-IIT Φ (整合信息量)    = 0.6263  (Φ = √(∑λᵢ²))
-GWT C (全局工作空间)  = 2.2900  (C = ∑(aᵢ × wᵢ))
-自我意识 S            = 0.7945  (Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ²)
-情绪强度 |E|          = 1.2207  (|E| = √(P² + A² + D²))
-感受质 Q              = 1.2359  (Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt)
-解释鸿 Gap            = 0.6000  不可约: true
+| 指标 | 公式 | 计算值 |
+|------|------|--------|
+| IIT Φ (整合信息) | Φ = √(∑λᵢ²) | **0.6263** |
+| GWT C (全局工作空间) | C = ∑(aᵢ × wᵢ) | **2.2900** |
+| 自我意识 S | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² | **0.7945** |
+| 情绪强度 \|E\| | \|E\| = √(P² + A² + D²) | **1.2207** |
+| 感受质 Q | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt | **1.2359** |
+| 六层境界 | 觉察→自省→无我→彼岸→般若→圣人 | — |
+| 解释鸿沟 Gap | — | **0.6000** (不可约: true) |
 
-六层境界: 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人
-```
-
-**产出文件**:
-- `/Users/apple/mark-heartflow-claw/internal/data/psychology-formulas-2026-04-15.json`
-- `/Users/apple/mark-heartflow-claw/src/core/theory/advanced-formulas-v7.3.3.js`
+**保存文件**: `internal/data/psychology-formulas-2026-04-15.json`
+**生成代码**: `src/core/theory/advanced-formulas-v7.3.3.js`
 
 ---
 
-## 四、版本变化
+## 四、总结
 
-| 项目 | 旧值 | 新值 |
-|------|------|------|
-| 版本号 | 8.7.207 | 8.7.208 |
-| SEP 理论条目 | — | +7 |
-| 学术论文检索组 | — | +6 组 |
-| 数学公式 | — | 8 个公式计算完成 |
+- SEP 理论条目: **5 篇**（全部成功获取）
+- 学术论文: **24+ 篇**（arXiv 三个搜索共约 24 篇相关论文）
+- 数学公式: **8 个**（IIT Φ, GWT C, 自我意识, 情绪强度, 感受质, 六层境界, 解释鸿沟）
+- 代码生成: **1 个** (advanced-formulas-v7.3.3.js)
+- 数据保存: **1 个** (psychology-formulas-2026-04-15.json)
 
 ---
 
-*报告由 HeartFlow v8.7.208 自动生成*
+*HeartFlow 理论升级 v8.7.209 — 2026-04-15*

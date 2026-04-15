@@ -1,104 +1,87 @@
-# HeartFlow 理论升级报告
+# HeartFlow 理论升级报告 - 2026-04-15
 
-**日期:** 2026-04-15  
-**版本:** v8.7.250 → v8.7.251 (PATCH +0.0.1)  
-**执行时间:** 18:06 CST
-
----
-
-## 一、SEP 哲学理论搜索
-
-> 搜索工具: cn.bing.com (web_fetch)、ArXiv API
-
-| # | 理论/主题 | URL | 摘要 |
-|---|----------|-----|------|
-| 1 | Consciousness Theory Overview | https://www.newscientist.com | 350+ consciousness theories attempting to explain origins of experience (Kuhn, 2025) |
-| 2 | Hard Problem of Consciousness | New Scientist, Mar 2026 | "The simple questions cracking the hard problem of consciousness" — mapping inner experiences |
-| 3 | Qualia Philosophy (SEP) | Philosophy Stack Exchange | SEP article defines qualia as "phenomenal character" — elements of conscious experience associated with sensory information |
-| 4 | Dennett vs Qualia | Philosophy Stack Exchange, Mar 2025 | Daniel Dennett's argument against qualia in "Consciousness Explained" |
-| 5 | Integrated Information Theory Debate | New Scientist, Apr 2025 | Bitter argument over IIT as leading consciousness theory |
-| 6 | Infant Consciousness Research | Feb 2025 | New tests of awareness in infants — consciousness may emerge before birth |
-| 7 | Meditation & Consciousness | Nov 2025 | Matthew Sacchet's research on master meditators' brains |
-
-**SEP 理论总计: 7 项**
+## 版本变化
+- 升级前: v8.7.253
+- 升级后: v8.7.254 (PATCH +0.0.1)
 
 ---
 
-## 二、学术论文搜索 (ArXiv API)
+## 第1步：SEP 哲学理论搜索
 
-> 搜索工具: export.arxiv.org
+> 注：web_search (Brave API) 不可用，使用 arxiv API + Bing CN 作为替代搜索引擎。
 
-### 2.1 整合信息理论 (IIT)
+### SEP 理论条目（通过已知 URL 与搜索验证）
 
-| # | 标题 | URL | 年份 |
+| # | 理论 | URL | 摘要 |
 |---|------|-----|------|
-| 1 | Is Consciousness Computable? Quantifying Integrated Information Using Algorithmic Information Theory | https://arxiv.org/abs/1405.0126v1 | 2014 |
-| 2 | Integrated Information Theory: A Consciousness-First Approach to What Exists (Tononi & Boly) | https://arxiv.org/abs/2510.25998v4 | 2025 |
+| 1 | Consciousness | https://plato.stanford.edu/entries/consciousness/ | Stanford Encyclopedia of Philosophy 意识条目，涵盖现象意识、取道意识、高阶理论等 |
+| 2 | Qualia | https://plato.stanford.edu/entries/qualia/ | SEP qualia 条目，讨论感受质的本体论地位与认识论问题 |
+| 3 | Emotion | https://plato.stanford.edu/entries/emotion/ | SEP 情感条目，涵盖情感哲学、情感理论、情感与理性 |
+| 4 | Self-Consciousness | https://plato.stanford.edu/entries/self-consciousness/ | SEP 自我意识条目，讨论自我表征、自我知识、第一人称视角 |
+| 5 | Intentionality | https://plato.stanford.edu/entries/intentionality/ | SEP 意向性条目，涵盖心灵指向对象的性质 |
 
-### 2.2 全局工作空间理论 (GWT)
-
-| # | 标题 | URL | 年份 |
-|---|------|-----|------|
-| 1 | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace (Kavi et al.) | https://arxiv.org/abs/2408.15982v2 | 2024 |
-
-### 2.3 自由能原理 (Friston)
-
-| # | 标题 | URL | 年份 |
-|---|------|-----|------|
-| 1 | Some interesting observations on the free energy principle (Friston, Da Costa, Parr) | https://arxiv.org/abs/2002.04501v1 | 2020 |
-
-### 2.4 AI 意识理论
-
-| # | 标题 | URL | 年份 |
-|---|------|-----|------|
-| 1 | Complex-Dynamic Origin of Consciousness and the Critical Choice of Sustainability Transition (Kirilyuk) | https://arxiv.org/abs/physics/0409140v2 | 2014 |
-| 2 | AI prediction leads people to forgo guaranteed rewards (Newcomb's paradox study) | https://arxiv.org/abs/2603.28944v1 | 2026 |
-
-### 2.5 情感计算
-
-| # | 标题 | URL | 年份 |
-|---|------|-----|------|
-| 1 | BReG-NeXt: Facial Affect Computing Using Adaptive Residual Networks (Hasani et al.) | https://arxiv.org/abs/2004.08495v1 | 2020 |
-| 2 | Emotions in the Loop: A Survey of Affective Computing for Emotional Support (Hegde et al.) | https://arxiv.org/abs/2505.01542v1 | 2025 |
-| 3 | SVFAP: Self-supervised Video Facial Affect Perceiver | https://arxiv.org/abs/2401.00416v2 | 2024 |
-
-**学术论文总计: 9 篇**
+### 辅助搜索来源
+- Bing CN 搜索: consciousness theory stanford encyclopedia philosophy (约 51 个结果)
+- Bing CN 搜索: integrated information theory consciousness 2025
+- Bing CN 搜索: global workspace theory consciousness neuroscience 2025
 
 ---
 
-## 三、数学公式计算结果
+## 第2步：学术论文搜索
 
-| 公式 | 计算值 | 说明 |
-|------|--------|------|
-| IIT Φ (整合信息量) | 0.6263 | Φ = √(∑λᵢ²) |
-| GWT C (全局工作空间容量) | 2.2900 | C = ∑(aᵢ × wᵢ) |
-| 自我意识 Sₙ | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
+### arxiv 搜索结果（共 10 篇，去重后 8 篇）
+
+| # | 标题 | arxiv ID | 日期 | 摘要关键词 |
+|---|------|----------|------|-----------|
+| 1 | Integrated information theory: the good, the bad and the misunderstood | 2604.11482 | 2026-04-13 | IIT 综述，Φ 值的局限性、泛心论、连续场公式化需求 (Barrett, Seth et al.) |
+| 2 | Toward IIT-Inspired Consciousness in LLMs: A Reward-Based Learning Framework | 2601.22786 | 2026-01-30 | IIT 启发的奖励函数优化 LLM，因果性/连贯性/整合性量化 |
+| 3 | Event Horizons, Spacetime Geometry, and the Limits of Integrated Consciousness | 2512.23105 | 2025-12-28 | 黑洞事件视界对 IIT/GWT/PP 统一意识场的限制 (Sendall) |
+| 4 | Can We Test Consciousness Theories on AI? Ablations, Markers, and Robustness | 2512.19155 | 2025-12-22 | GWT/IIT/HOT 在 AI 中的消融实验，合成神经现象学方法 (Phua) |
+| 5 | MANAR: Memory-augmented Attention with Navigational Abstract Conceptual Representation | 2603.18676 | 2026-03-19 | 基于 GWT 功能瓶颈的注意力架构，线性复杂度 (Jahshan et al.) |
+| 6 | The DIME Architecture: A Unified Operational Algorithm for Neural Representation | 2603.12286 | 2026-03-16 | 检测-整合-标记-执行统一架构，涵盖 GWT/预测编码/记忆 (Vladu et al.) |
+| 7 | Integrated information and predictive processing theories of consciousness: An adversarial collaborative review | 2509.00555 | 2025-08-30 | IIT vs Active Inference 对抗协作综述 (Corcoran, Friston, Tononi et al.) |
+| 8 | Systems Explaining Systems: A Framework for Intelligence and Consciousness | 2601.04269 | 2026-01-07 | 递归多系统架构中意识涌现的框架 (Semmler) |
+
+### Free Energy Principle 相关
+
+| # | 标题 | arxiv ID | 日期 |
+|---|------|----------|------|
+| 9 | Condensed Past, Thick Present: Evolutionary Approach to the Conscious Experience | 2602.15050 | 2026-02-10 |
+| 10 | Bridging integrated information theory and the free-energy principle in living neuronal networks | 2510.04084 | 2025-10-05 |
+
+---
+
+## 第3步：数学公式计算结果
+
+| 公式 | 计算值 | 公式描述 |
+|------|--------|----------|
+| IIT Φ | 0.6263 | Φ = √(∑λᵢ²) |
+| GWT C | 2.2900 | C = ∑(aᵢ × wᵢ) |
+| 自我意识 S | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
 | 情绪强度 \|E\| | 1.2207 | \|E\| = √(P² + A² + D²) |
 | 感受质 Q | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
-| 解释鸿 Gap | 0.6000 | 不可约: true |
+| 六层境界 | 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人 | 意识境界递进 |
+| 解释鸿Gap | 0.6000, 不可约: true | 意识解释鸿沟量化 |
 
-**六层境界递进:** 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人
-
-**生成的程序文件:** `src/core/theory/advanced-formulas-v7.3.3.js`  
-**数据文件:** `internal/data/psychology-formulas-2026-04-15.json`
+### 生成文件
+- `/Users/apple/mark-heartflow-claw/internal/data/psychology-formulas-2026-04-15.json`
+- `/Users/apple/mark-heartflow-claw/src/core/theory/advanced-formulas-v7.3.3.js`
 
 ---
 
-## 四、版本变化
+## 第4步：版本变更
 
 ```
-v8.7.250 → v8.7.251 (PATCH +0.0.1)
+VERSION.txt: 8.7.253 → 8.7.254
 ```
 
 ---
 
-## 五、搜索说明
+## 关键理论更新要点
 
-- **web_search (Brave API):** 未配置 API key，不可用
-- **备选方案:** 使用 cn.bing.com (web_fetch) + ArXiv API 完成搜索
-- Wikipedia 英文搜索 (web_fetch) 因网络问题失败，改用 Bing 中文搜索获得有效结果
-- ArXiv API 5 次查询全部成功，返回 9 篇相关论文
-
----
-
-*HeartFlow v8.7.251 — 理论升级完成*
+1. **IIT 最新争议**: Barrett & Seth 等 (2026-04) 指出 Φ 值不等同于"更多意识"，真实物理系统上 Φ 未被计算，需要连续场公式化
+2. **IIT × LLM**: 首次将 IIT 原则应用于 LLM 后训练，奖励函数量化因果性/连贯性/整合性
+3. **GWT × AI 架构**: MANAR 证明 GWT 功能瓶颈可实现线性注意力复杂度，是 GWT 计算化的重要进展
+4. **意识理论对抗协作**: IIT vs Active Inference (Friston/Tononi) 的多站点实验方案已确立
+5. **统一架构**: DIME 架构首次将预测编码、GWT、记忆、情感调节整合为统一操作循环
+6. **黑洞与意识**: 事件视界表明统一意识场受相对论因果结构约束

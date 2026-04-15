@@ -1,101 +1,102 @@
 # HeartFlow 理论升级报告
 
-**日期:** 2026-04-15  
-**版本变化:** v8.7.256 → v8.7.257 (+0.0.1 PATCH)
+**日期**: 2026-04-15
+**时间**: 19:48 CST (11:48 UTC)
 
 ---
 
-## 一、SEP 哲学理论搜索（Stanford Encyclopedia of Philosophy）
-
-| # | 理论 | URL | 状态 |
-|---|------|-----|------|
-| 1 | Consciousness | https://plato.stanford.edu/entries/consciousness/ | ✅ 可访问 |
-| 2 | Qualia | https://plato.stanford.edu/entries/qualia/ | ✅ 可访问 |
-| 3 | Intentionality | https://plato.stanford.edu/entries/intentionality/ | ✅ 可访问 |
-| 4 | The Unity of Consciousness | https://plato.stanford.edu/entries/consciousness-unity/ | ✅ 可访问 |
-| 5 | Self-Consciousness | https://plato.stanford.edu/entries/self-consciousness/ | ✅ 可访问 |
-
-**摘要要点：**
-- **Consciousness:** 意识问题是当代心灵哲学的核心议题，缺乏统一的理论共识但对理解心灵至关重要。
-- **Qualia:** 感受质作为现象特征的主观属性，是意识体验中"像是什么感觉"的核心成分。
-- **Intentionality:** 意向性指心灵指向、表征事物的能力，自 Brentano 以来一直是心灵哲学与语言哲学的交叉点。
-- **Unity of Consciousness:** 意识的统一性是早期现代哲学（Descartes、Leibniz、Kant 等）的持续关注点，当代分析哲学聚焦于现象统一性。
-- **Self-Consciousness:** 自我意识的历史追溯至德尔斐箴言"认识你自己"，在早期现代哲学中成为核心议题。
-
----
-
-## 二、学术论文搜索（arXiv）
-
-### 集成信息理论（IIT）
-| # | 标题 | 日期 |
-|---|------|------|
-| 1 | Integrated information theory: the good, the bad and the misunderstood (Barrett et al.) | 2026-04-13 |
-| 2 | MANAR: Memory-augmented Attention with GWT (abstract references Global Workspace Theory) | 2026-03-19 |
-| 3 | The DIME Architecture: A Unified Operational Algorithm for Neural Representation | 2026-03-16 |
-| 4 | Toward IIT-Inspired Consciousness in LLMs: A Reward-Based Learning Framework | 近期 |
-
-### 全局工作空间理论（GWT）
-| # | 标题 | 日期 |
-|---|------|------|
-| 1 | A Modular Theory of Subjective Consciousness for Natural and Artificial Minds | 2025-10-02 |
-| 2 | Ghost in the Machine: Philosophical Implications of Recursive Algorithms in AI | 2025-07-18 |
-| 3 | Embodied Consciousness Theory (Schad) | — |
-
-### 自由能原理（Friston）
-| # | 标题 | 日期 |
-|---|------|------|
-| 1 | Condensed Past, Thick Present: Evolutionary Approach to Conscious Experience (Smolin + Friston FEP) | 2026-02-10 |
-| 2 | Self-orthogonalizing attractor neural networks emerging from the free energy principle (Friston) | 2025-05-28 |
-| 3 | Meta-Representational Predictive Coding: Biomimetic Self-Supervised Learning (Ororbia, Friston, Rao) | 2025-03-22 |
-| 4 | Distributionally Robust Free Energy Principle for Decision-Making | — |
-
-### AI 意识理论
-| # | 标题 | 日期 |
-|---|------|------|
-| 1 | From indicators to biology: the calibration problem in artificial consciousness (Koch) | 2026-03-29 |
-| 2 | The Sentience Readiness Index: Measuring National Preparedness for Artificial Sentience (Rost) | 2026-03-04 |
-| 3 | What does a system modify when it modifies itself? (human-AI comparison) | 2026-03-29 |
-
-### 情感计算模型
-| # | 标题 | 日期 |
-|---|------|------|
-| 1 | ARGen: Affect-Reinforced Generative Augmentation towards Vision-based Dynamic Emotion Perception | 2026-04-14 |
-| 2 | Persona-E²: Personality-Shaped Emotional Responses to Textual Events | 近期 |
-
-**论文总数：19 篇**
-
----
-
-## 三、数学公式计算结果
-
-| 公式 | 结果 | 说明 |
-|------|------|------|
-| IIT Φ | 0.6263 | Φ = √(∑λᵢ²) |
-| GWT C | 2.2900 | C = ∑(aᵢ × wᵢ) |
-| 自我意识 S | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
-| 情绪强度 \|E\| | 1.2207 | \|E\| = √(P² + A² + D²) |
-| 感受质 Q | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
-| 六层境界 | 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人 | — |
-| 解释鸿 Gap | 0.6000 | 不可约: true |
-
-**公式文件已保存：** `internal/data/psychology-formulas-2026-04-15.json`  
-**高级计算文件已生成：** `src/core/theory/advanced-formulas-v7.3.3.js`
-
----
-
-## 四、版本变化
+## 一、版本变化
 
 | 项目 | 旧版本 | 新版本 |
 |------|--------|--------|
-| VERSION.txt | 8.7.256 | 8.7.257 |
-| PATCH | — | +0.0.1 |
+| HeartFlow | 8.7.258 | 8.7.259 |
+| 变化类型 | PATCH | +0.0.1 |
 
 ---
 
-## 五、升级摘要
+## 二、SEP 哲学理论搜索（4 项）
 
-- ✅ SEP 理论搜索：5 项（全部可访问）
-- ✅ 学术论文搜索：19 篇（涵盖 IIT/GWT/FEP/AI意识/情感计算）
-- ✅ 数学公式计算：8 个公式，7 个高级计算
-- ✅ 文件生成：psychology-formulas + advanced-formulas
-- ✅ 版本号：8.7.256 → 8.7.257
+> Brave Search API Key 未配置，改用 web_fetch 直接获取 SEP 条目。
+
+### 1. Consciousness
+- **URL**: https://plato.stanford.edu/entries/consciousness/
+- **摘要**: Consciousness is arguably the central issue in current theorizing about the mind. Despite lack of any agreed-upon theory, there is widespread consensus that an adequate account of mind requires a clear understanding of consciousness and its place in nature. Covers history from ancient Greek philosophy through the early modern era.
+
+### 2. Qualia
+- **URL**: https://plato.stanford.edu/entries/qualia/
+- **摘要**: Qualia as phenomenal character — what it is like subjectively to undergo an experience. C.S. Peirce introduced the term 'quale' into philosophy in 1866. Covers qualia as properties of sense data and the ongoing philosophical debate about their nature and existence.
+
+### 3. Self-Consciousness
+- **URL**: https://plato.stanford.edu/entries/self-consciousness/
+- **摘要**: From the Delphic maxim "Know Thyself" to Kant and post-Kantians, self-consciousness became central to epistemology and philosophy of mind. Aristotle claimed that a person must, while perceiving any thing, also perceive their own existence — suggesting consciousness entails self-consciousness.
+
+### 4. Intentionality
+- **URL**: https://plato.stanford.edu/entries/intentionality/
+- **摘要**: Intentionality is the power of minds and mental states to be about, to represent, or to stand for things, properties and states of affairs. Franz Brentano introduced the term into philosophy in the last quarter of the nineteenth century. Covers puzzles of representation at the interface between philosophy of mind and philosophy of language.
+
+---
+
+## 三、学术论文搜索（arXiv API，3 项）
+
+### 1. Global Workspace Theory (36 results)
+- **"Theater of Mind" for LLMs: A Cognitive Architecture Based on Global Workspace Theory**
+  - URL: https://arxiv.org/abs/2604.08206v1
+  - 作者: Wenlong Shang
+  - 日期: 2026-04-09
+  - 摘要: Proposes Global Workspace Agents (GWA), a cognitive architecture inspired by Global Workspace Theory. Transitions multi-agent coordination from passive data structure to active, event-driven discrete dynamical system. Introduces entropy-based intrinsic drive mechanism.
+
+### 2. Free Energy Principle / Friston (278 results)
+- **Classical and Quantum Dynamics in an Information Theoretic Space**
+  - URL: https://arxiv.org/abs/2604.09735v1
+  - 作者: Sean Golder, Christopher Griffin
+  - 日期: 2026-04-09
+  - 摘要: Extends information geometric constructions useful for Friston's free energy principle. Derives spectrum for Laplace-Beltrami operator in Bernoulli space and shows quantization of momentum in information space.
+
+- **Lattice Field Theory for a network of real neurons**
+  - URL: https://arxiv.org/abs/2604.05251v1
+  - 日期: 2026-04-06
+  - 摘要: Simplified Lattice Field Theory framework allowing experimental recordings from Brain-Computer Interfaces to be interpreted physically.
+
+### 3. Integrated Information Theory
+- **arXiv API 精确搜索**: 0 精确匹配（短语搜索无结果，该领域论文通常使用关键词组合而非固定短语）
+
+---
+
+## 四、数学公式计算结果
+
+执行脚本: `scripts/hourly-theory-upgrade-v2.js`
+
+| 公式 | 计算结果 | 公式表达式 |
+|------|----------|-----------|
+| IIT Φ (整合信息) | 0.6263 | Φ = √(∑λᵢ²) |
+| GWT C (全局工作空间容量) | 2.2900 | C = ∑(aᵢ × wᵢ) |
+| 自我意识 S | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
+| 情绪强度 \|E\| | 1.2207 | \|E\| = √(P² + A² + D²) |
+| 感受质 Q | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
+| 解释鸿沟 Gap | 0.6000 | 不可约: true |
+
+**六层境界**: 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人
+
+**输出文件**:
+- `internal/data/psychology-formulas-2026-04-15.json`
+- `src/core/theory/advanced-formulas-v7.3.3.js`
+
+---
+
+## 五、搜索统计
+
+| 类别 | 数量 |
+|------|------|
+| SEP 哲学理论 | 4 项 |
+| 学术论文 (arXiv) | 3 项（278 + 36 条结果中精选） |
+| 数学公式 | 8 个 |
+| 高级计算 | 7 个 |
+
+---
+
+## 六、备注
+
+- Brave Search API 未配置，web_search 工具不可用
+- SEP 理论改用 web_fetch 直接从 plato.stanford.edu 获取条目
+- 学术论文改用 arXiv Export API (export.arxiv.org/api/query) 获取
+- Integrated Information Theory 精确短语搜索无结果（论文通常用关键词组合）

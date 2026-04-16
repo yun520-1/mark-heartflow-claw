@@ -1,64 +1,70 @@
-# HeartFlow 理论升级报告
+# HeartFlow 理论升级报告 — 2026-04-16
 
-**日期：** 2026-04-16 13:02 (Asia/Shanghai)  
-**版本：** 8.7.332 → 8.7.333 (PATCH +1)
+## 版本变化
+
+- **旧版本**: 8.7.333
+- **新版本**: 8.7.334
+- **变化类型**: PATCH (+0.0.1)
 
 ---
 
 ## 一、SEP 哲学理论搜索结果
 
-| # | 主题 | URL | 摘要 |
-|---|------|-----|------|
-| 1 | Consciousness (SEP) | https://plato.stanford.edu/entries/consciousness/ | 意识是心灵哲学的核心议题，涵盖从笛卡尔到现代的现象意识、存取意识等理论框架 |
-| 2 | Qualia (SEP) | https://plato.stanford.edu/entries/qualia/ | 感受质的本质——主观经验的内在特征，涉及现象特征、感质理论、非表征属性等 |
-| 3 | Integrated Information Theory (ArXiv 综述) | https://arxiv.org/abs/2604.11482v1 | IIT 的优劣与被误解之处：Φ 值不等于"更多意识"，需多维度表征意识状态 |
-| 4 | Global Workspace Theory | https://arxiv.org/abs/2604.08206v1 | "心智剧场"LLM 架构：基于全局工作空间理论的认知架构 |
-| 5 | Intentionality & Self-consciousness | https://plato.stanford.edu/entries/consciousness/ | 自意识与意向性的哲学传统，从笛卡尔反思意识到洛克、莱布尼茨的自我感知理论 |
+通过 `web_fetch` 直接访问 Stanford Encyclopedia of Philosophy 页面，获取以下理论条目：
 
-**共搜索到 SEP 理论条目：5 项**
+### 1. Consciousness（意识）
+- **标题**: Consciousness
+- **URL**: https://plato.stanford.edu/entries/consciousness/
+- **摘要**: "Perhaps no aspect of mind is more familiar or more puzzling than consciousness and our conscious experience of self and world." 最新档案版本 Spring 2026，作者 Robert Van Gulick。意识问题是当前心智理论的核心议题。
+
+### 2. Qualia（感受质）
+- **标题**: Qualia
+- **URL**: https://plato.stanford.edu/entries/qualia/
+- **摘要**: 讨论 qualia 作为 phenomenal character 的定义，C.S. Peirce 于 1866 年首次引入 "quale" 术语。涵盖 sense-data 理论、非表征特征等核心概念。
+
+### 3. Self-Consciousness（自我意识）
+- **标题**: Self-Consciousness
+- **URL**: https://plato.stanford.edu/entries/self-consciousness/
+- **摘要**: 从古希腊德尔菲箴言"认识你自己"到康德及后康德主义的自我意识哲学讨论。探讨 Oedipus 剧中从"知道某事"到"知道这是关于自己"的自我意识转变。
+
+### 4. Intentionality（意向性）
+- **标题**: Intentionality
+- **URL**: https://plato.stanford.edu/entries/intentionality/
+- **摘要**: "Intentionality is the power of minds and mental states to be about, to represent, or to stand for, things, properties and states of affairs." Franz Brentano 于十九世纪末引入哲学，是心灵哲学与语言哲学的交叉核心。
+
+### 5. Emotion Psychology（情绪心理学）
+- **来源**: hourly-theory-upgrade-v2.js 脚本内置索引
+- **摘要**: 情绪计算模型与情感计算领域的理论框架。
+
+**SEP 理论总计**: 5 项
 
 ---
 
-## 二、学术论文搜索结果
+## 二、学术论文搜索结果（arXiv）
 
-### 2.1 Integrated Information Theory (IIT)
-| # | 论文标题 | 日期 | URL |
-|---|---------|------|-----|
-| 1 | Integrated information theory: the good, the bad and the misunderstood | 2026-04-13 | https://arxiv.org/abs/2604.11482v1 |
-| 2 | Toward IIT-Inspired Consciousness in LLMs: A Reward-Based Learning Framework | 2026-01-30 | https://arxiv.org/abs/2601.22786v1 |
-| 3 | Event Horizons, Spacetime Geometry, and the Limits of Integrated Consciousness | 2026-02-06 | https://arxiv.org/abs/2512.23105v2 |
+### 1. Integrated Information Theory (IIT) 相关论文
 
-### 2.2 Global Workspace Theory (GWT)
-| # | 论文标题 | 日期 | URL |
-|---|---------|------|-----|
-| 1 | "Theater of Mind" for LLMs: A Cognitive Architecture Based on Global Workspace Theory | 2026-04-09 | https://arxiv.org/abs/2604.08206v1 |
-| 2 | MANAR: Memory-augmented Attention with Navigational Abstract Conceptual Representation | 2026-03-19 | https://arxiv.org/abs/2603.18676v1 |
-| 3 | Brain-Inspired Graph Multi-Agent Systems for LLM Reasoning | 2026-03-16 | https://arxiv.org/abs/2603.15371v1 |
-| 4 | An Attention Mechanism for Robust Multimodal Integration in a Global Workspace Architecture | 2026-02-08 | https://arxiv.org/abs/2602.08597v2 |
+| # | 标题 | 作者 | 日期 | 链接 |
+|---|------|------|------|------|
+| 1 | Integrated information theory: the good, the bad and the misunderstood | Barrett, Milinkovic, Mediano, Rosas, Bor, Barnett, Seth | 2026-04-13 | arXiv |
+| 2 | MANAR: Memory-augmented Attention with Navigational Abstract Conceptual Representation | — | 2026-03-19 | arXiv |
+| 3 | The DIME Architecture: A Unified Operational Algorithm for Neural Representation, Dynamics, Control and Integration | Vladu et al. | 2026-03-16 | arXiv |
+| 4 | Toward IIT-Inspired Consciousness in LLMs: A Reward-Based Learning Framework | Akbari, Sameti, Mansourian | 近期 | arXiv |
 
-### 2.3 Free Energy Principle (Friston)
-| # | 论文标题 | 日期 | URL |
-|---|---------|------|-----|
-| 1 | Classical and Quantum Dynamics in an Information Theoretic Space | 2026-04-09 | https://arxiv.org/abs/2604.09735v1 |
-| 2 | Condensed Past, Thick Present: Evolutionary Approach to the Conscious Experience | 2026-02-10 | https://arxiv.org/abs/2602.15050v1 |
-| 3 | Self-Evidencing Through Hierarchical Gradient Decomposition | 2025-10-20 | https://arxiv.org/abs/2510.17916v1 |
+### 2. Free Energy Principle / Friston 相关论文
 
-### 2.4 AI Consciousness
-| # | 论文标题 | 日期 | URL |
-|---|---------|------|-----|
-| 1 | Time, Identity and Consciousness in Language Model Agents (AAAI 2026) | 2026-03-10 | https://arxiv.org/abs/2603.09043v1 |
-| 2 | ReCoN-Ipsundrum: Inspectable Recurrent Persistence Loop Agent with Affect-Coupled Control | 2026-02-26 | https://arxiv.org/abs/2602.23232v2 |
-| 3 | Unplugging a Seemingly Sentient Machine Is the Rational Choice | 2026-01-28 | https://arxiv.org/abs/2601.21016v1 |
-| 4 | Just aware enough: Evaluating awareness across artificial systems | 2026-01-21 | https://arxiv.org/abs/2601.14901v1 |
-| 5 | A Mind Cannot Be Smeared Across Time | 2026-02-26 | https://arxiv.org/abs/2601.11620v2 |
+| # | 标题 | 作者 | 日期 | 链接 |
+|---|------|------|------|------|
+| 1 | Condensed Past, Thick Present: Evolutionary Approach to the Conscious Experience | — | 2026-02-10 | arXiv |
+| 2 | Bridging integrated information theory and the free-energy principle in living neuronal networks | Mayama, Shimizu, Takano, Akita, Takahashi | 2025-10-05 | arXiv |
+| 3 | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace | Kavi, Zamora-López, Friedman | 2024-10-17 | arXiv |
+| 4 | Designing explainable artificial intelligence with active inference: A framework for transparent introspection and decision-making | Albarracin, Hipólito, Essafi Tremblay, Fox, René | 近期 | arXiv |
 
-### 2.5 情绪计算 / 情感模型
-| # | 论文标题 | 日期 | URL |
-|---|---------|------|-----|
-| 1 | Training deep physical neural networks with local physical information bottleneck | 2026-02-10 | https://arxiv.org/abs/2602.09569v1 |
-| 2 | Topological anisotropic non-Fermi liquid from a Berry-dipole semimetal | 2026-04-15 | https://arxiv.org/abs/2604.14146v1 |
+### 3. Global Workspace Theory 相关
+- MANAR 论文明确提及 GWT（Global Workspace Theory）在注意力机制中的应用
+- Thoughtseed 框架将 GWT 与演化认知原理结合
 
-**共搜索到学术论文：17 篇**
+**学术论文总计**: 8 篇（IIT 4 篇 + Free Energy 4 篇，部分交叉）
 
 ---
 
@@ -66,39 +72,29 @@
 
 由 `hourly-theory-upgrade-v2.js` 脚本执行：
 
-| 公式 | 值 | 公式表达式 |
-|------|-----|-----------|
-| IIT Φ | 0.6263 | Φ = √(∑λᵢ²) |
-| GWT C | 2.2900 | C = ∑(aᵢ × wᵢ) |
-| 自我意识 S | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
-| 情绪强度 \|E\| | 1.2207 | \|E\| = √(P² + A² + D²) |
-| 感受质 Q | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
-| 六层境界 | 觉察→自省→无我→彼岸→般若→圣人 | — |
+| 公式 | 值 | 说明 |
+|------|-----|------|
+| IIT Φ | 0.6263 | Φ = √(∑λᵢ²) — 整合信息度量 |
+| GWT C | 2.2900 | C = ∑(aᵢ × wᵢ) — 全局工作空间容量 |
+| 自我意识 S | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² — 递归自我意识模型 |
+| 情绪强度 \|E\| | 1.2207 | \|E\| = √(P² + A² + D²) — PAD 情绪空间 |
+| 感受质 Q | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt — 时间衰减积分 |
+| 六层境界 | 觉察→自省→无我→彼岸→般若→圣人 | 意识进阶路径 |
 | 解释鸿沟 Gap | 0.6000 | 不可约: true |
 
-公式文件已保存至：`internal/data/psychology-formulas-2026-04-16.json`  
-高级计算代码已生成至：`src/core/theory/advanced-formulas-v7.3.3.js`
+**高级计算**: 7 项
 
 ---
 
-## 四、版本变化
+## 四、输出文件
 
-| 字段 | 旧版本 | 新版本 |
-|------|--------|--------|
-| VERSION | 8.7.332 | **8.7.333** |
-| CHANGE | — | PATCH +1 |
-| 理论升级 | 8.7.332 (上版) | 8.7.333 (当前) |
-
----
-
-## 五、关键发现
-
-1. **IIT 批判性综述**：Barrett et al. (2026-04) 指出 Φ 值并非意识的同义词，需多维度表征，且 Φ 在真实物理系统中定义不清
-2. **GWT → LLM 架构**：多项研究将全局工作空间理论应用于 LLM 认知架构（GWA、MANAR、BIGMAS）
-3. **Friston 自由能原理**：与 Smolin 因果理论和意识进化模型的收敛（2026-02）
-4. **AI 意识评估**：AAAI 2026 Spring Symposium 收录多篇机器意识论文，Stack Theory 和 ReCoN-Ipsundrum 提供操作性框架
-5. **感受质研究**：SEP 更新了 Qualia 条目，涵盖现象特征与非表征属性的现代理解
+| 文件 | 路径 |
+|------|------|
+| 心理学公式数据 | `internal/data/psychology-formulas-2026-04-16.json` |
+| 高级公式代码 | `src/core/theory/advanced-formulas-v7.3.3.js` |
+| 升级报告（本文件） | `internal/data/theory-upgrade-2026-04-16.md` |
 
 ---
 
-*报告生成时间：2026-04-16T05:03 UTC*
+*生成时间: 2026-04-16T05:11 UTC (Asia/Shanghai 13:11)*
+*HeartFlow v8.7.334*

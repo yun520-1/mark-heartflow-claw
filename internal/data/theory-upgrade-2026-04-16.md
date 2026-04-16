@@ -1,98 +1,125 @@
-# HeartFlow 理论升级报告
+# HeartFlow 理论升级报告 - 2026-04-16
 
-**日期**: 2026-04-16
-**时间**: 09:04 AM (Asia/Shanghai)
+## 基本信息
 
----
-
-## 版本变化
-
-- **旧版本**: 8.7.314
-- **新版本**: 8.7.315
-- **变更类型**: PATCH (+0.0.1)
+- 升级时间：2026-04-16T01:10 UTC
+- 触发方式：cron 定时任务
+- 版本号变化：8.7.315 → 8.7.316 (PATCH +0.0.1)
 
 ---
 
-## 搜索到的 SEP 理论（5项）
+## 一、SEP 哲学理论搜索（5 项）
 
-通过直接访问 Stanford Encyclopedia of Philosophy 获取：
+| # | 主题 | SEP URL | 状态 |
+|---|------|---------|------|
+| 1 | Consciousness | https://plato.stanford.edu/entries/consciousness/ | ✅ 200 OK |
+| 2 | Qualia | https://plato.stanford.edu/entries/qualia/ | ✅ 200 OK |
+| 3 | Emotion | https://plato.stanford.edu/entries/emotion/ | ✅ 200 OK |
+| 4 | Self-Consciousness | https://plato.stanford.edu/entries/self-consciousness/ | ✅ 200 OK |
+| 5 | Intentionality | https://plato.stanford.edu/entries/intentionality/ | ✅ 200 OK |
 
-1. **Consciousness**
-   - URL: https://plato.stanford.edu/entries/consciousness/
-   - 摘要: 意识的本质与地位，探讨从笛卡尔、洛克到现代的意识理论。意识是当代心灵哲学中最核心也最令人困惑的问题。
+### 关键发现
 
-2. **Qualia**
-   - URL: https://plato.stanford.edu/entries/qualia/
-   - 摘要: 感受质作为经验的内在可感知特征，探讨其是否为本质的、非表征的、不可言说的属性。涉及 Nagel、Peacocke、Block 等人的观点。
-
-3. **Self-Consciousness**
-   - URL: https://plato.stanford.edu/entries/self-consciousness/
-   - 摘要: 自我意识的历史讨论，从古希腊"认识你自己"到笛卡尔、康德和后康德主义者。涉及亚里士多德、奥古斯丁、阿维森纳等人的观点。
-
-4. **Intentionality**
-   - URL: https://plato.stanford.edu/entries/intentionality/
-   - 摘要: 意向性作为心灵指向、代表或关于事物/属性/事态的能力。从 Franz Brentano 引入哲学以来，成为心灵与语言哲学的核心议题。
-
-5. **Consciousness and the Self** (增强定时升级脚本自动搜索)
-   - 来源: hourly-theory-upgrade-v2.js 自动检索
-   - 涵盖: emotion psychology theory 等
-
-> 注: web_search (Brave API) 因缺少 API Key 不可用。上述 4 条通过直接访问 plato.stanford.edu 获取，第 5 条来自脚本内置搜索。
+- **Consciousness**：意识问题被认为是当代心灵哲学的核心议题。从笛卡尔到洛克到莱布尼茨，意识被广泛认为是心理状态的本质特征。
+- **Qualia**：感受质是体验的主观特质，是现象意识的核心问题。Peirce 1866 年首次引入该术语。
+- **Emotion**：情感定义的两个目标：(a) 兼容日常语言用法，(b) 理论丰硕性。情感概念原型化组织（Fehr & Russell 1984）。
+- **Self-Consciousness**：从古希腊德尔斐箴言"认识你自己"到笛卡尔、康德的自我意识传统，自我意识是认识论和心灵哲学的核心议题。
+- **Intentionality**：Brentano 19 世纪引入的心理表征能力，即心灵指向事物的能力。位于心灵哲学与语言哲学的交叉点。
 
 ---
 
-## 搜索到的学术论文（5项）
+## 二、学术论文搜索（PubMed，3 个主题）
 
-通过 HeartFlow hourly-theory-upgrade-v2.js 脚本自动检索：
+### A. Integrated Information Theory (381 条总结果，近年增长显著)
 
-1. **Integrated Information Theory Consciousness**
-   - 来源: 脚本 arxiv 搜索模块
-   - 涵盖: IIT Φ 计算与意识整合度
+1. **RIFT: A Fractal-Holographic Theory of Consciousness and Autopoietic Control** - Bieberich E. (bioRxiv 2026)
+   - PMID: 41929211 | 提出分形压缩感知信息产生全息内空间的意识理论
+   - URL: https://pubmed.ncbi.nlm.nih.gov/41929211/
 
-2. **Global Workspace Theory Consciousness**
-   - 来源: 脚本 arxiv 搜索模块
-   - 涵盖: 全局工作空间与神经科学
+2. **Disrupted Emergent Properties of the Brain in Schizophrenia: Insight From Integrated Information Decomposition** - Tarchi L, et al. (Brain Behav 2026)
+   - PMID: 41913713 | 整合信息分解为精神分裂症神经影像异常提供可解释生物标志物
+   - URL: https://pubmed.ncbi.nlm.nih.gov/41913713/
 
-3. **Free Energy Principle Consciousness**
-   - 来源: 脚本 arxiv 搜索模块
-   - 涵盖: Karl Friston 自由能原理
+3. **The integrated information phi of an integrate and fire network** - Danilczuk M, et al. (PLoS Comput Biol 2026)
+   - PMID: 41801929 | 弥合 IIT 理论概念与实际应用之间的差距
+   - URL: https://pubmed.ncbi.nlm.nih.gov/41801929/
 
-4. **Quantum Consciousness Theory**
-   - 来源: 脚本 arxiv 搜索模块
-   - 涵盖: 量子意识理论
+4. **Resonant closure: consciousness as a dynamically self-stabilized informational state** - Arneth B. (Front Hum Neurosci 2026)
+   - PMID: 41767713 | 基于预测处理和自由能原理的意识理论
+   - URL: https://pubmed.ncbi.nlm.nih.gov/41767713/
 
-5. **Emotion Computation Model**
-   - 来源: 脚本 arxiv 搜索模块
-   - 涵盖: 情感计算模型
+### B. Global Workspace Theory (184 条总结果)
 
-> 注: arxiv.org API 返回了 429 频率限制。论文检索由脚本内置模块完成。
+1. **The Global Neuronal Workspace as a multilevel model of conscious processing** - Changeux JP, et al. (Trends Cogn Sci 2026)
+   - PMID: 41927383 | GNW 理论的多层次架构，从细胞分子机制到大规模网络动力学
+   - URL: https://pubmed.ncbi.nlm.nih.gov/41927383/
+
+2. **Protocol for testing GNW and IIT of consciousness in non-human primates and mice** - Gibbons M, et al. (PLoS One 2026)
+   - PMID: 41739818 | GNW 与 IIT 的对抗性协作实验协议
+   - URL: https://pubmed.ncbi.nlm.nih.gov/41739818/
+
+3. **The phenomenal binding problem for neural networks** - Percy C, Agarwal G. (Conscious Cogn 2026)
+   - PMID: 41637896 | 现象绑定问题向计算神经科学的转化
+   - URL: https://pubmed.ncbi.nlm.nih.gov/41637896/
+
+4. **Beyond mimicry: a framework for evaluating genuine intelligence in artificial systems** - Niazi SK (Front Artif Intell 2026)
+   - PMID: 41602303 | mPCAB 框架：应用于人工系统的意识评估方法
+   - URL: https://pubmed.ncbi.nlm.nih.gov/41602303/
+
+### C. Free Energy Principle (85 条总结果)
+
+1. **Distributionally robust free energy principle for decision-making** - Shafiei A, Friston K, et al. (Nat Commun 2025)
+   - PMID: 41408057 | DR-FREE 模型：将鲁棒性内建到自由能原理的决策机制中
+   - URL: https://pubmed.ncbi.nlm.nih.gov/41408057/
+
+2. **Gradient-Free De Novo Learning** - Friston K, Parr T, et al. (Entropy 2025)
+   - PMID: 41008118 | 基于自由能原理的无梯度学习框架
+   - URL: https://pubmed.ncbi.nlm.nih.gov/41008118/
+
+3. **Pathfinding: a neurodynamical account of intuition** - Kotler S, Friston K, et al. (Commun Biol 2025)
+   - PMID: 40804280 | 自由能原理与亚稳态协调动力学解释直觉
+   - URL: https://pubmed.ncbi.nlm.nih.gov/40804280/
+
+4. **How do inner screens enable imaginative experience?** - Fields C, Friston K, et al. (Neurosci Conscious 2025)
+   - PMID: 40265192 | FEP 对意识模型的约束：注意力控制与想象体验
+   - URL: https://pubmed.ncbi.nlm.nih.gov/40265192/
+
+5. **Active Inference and Intentional Behavior** - Friston KJ, et al. (Neural Comput 2025)
+   - PMID: 40030135 | 主动推断框架下的意向行为与自我组织
+   - URL: https://pubmed.ncbi.nlm.nih.gov/40030135/
 
 ---
 
-## 数学公式计算结果
+## 三、数学公式计算结果
 
-| 公式 | 值 | 说明 |
-|------|-----|------|
-| IIT Φ | 0.6263 | Φ = √(∑λᵢ²) |
-| GWT C | 2.2900 | C = ∑(aᵢ × wᵢ) |
+| 公式 | 值 | 公式表达 |
+|------|-----|----------|
+| IIT Φ (整合信息) | 0.6263 | Φ = √(∑λᵢ²) |
+| GWT C (全局工作空间) | 2.2900 | C = ∑(aᵢ × wᵢ) |
 | 自我意识 S | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
 | 情绪强度 \|E\| | 1.2207 | \|E\| = √(P² + A² + D²) |
 | 感受质 Q | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
-| 六层境界 | 觉察→自省→无我→彼岸→般若→圣人 | |
 | 解释鸿沟 Gap | 0.6000 | 不可约: true |
+| 六层境界 | 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人 |  |
+
+- 高级计算：7 个
+- 保存文件：`/Users/apple/mark-heartflow-claw/internal/data/psychology-formulas-2026-04-16.json`
+- 生成程序：`/Users/apple/mark-heartflow-claw/src/core/theory/advanced-formulas-v7.3.3.js`
 
 ---
 
-## 生成的文件
+## 四、版本变化
 
-- `/Users/apple/mark-heartflow-claw/internal/data/psychology-formulas-2026-04-16.json`
-- `/Users/apple/mark-heartflow-claw/src/core/theory/advanced-formulas-v7.3.3.js`
+- **前版本**：8.7.315
+- **后版本**：8.7.316
+- **变化类型**：PATCH (+0.0.1)
+- **升级内容**：整合 SEP 哲学理论 + PubMed 学术论文 + 数学公式计算
 
 ---
 
-## 升级摘要
+## 五、搜索统计
 
-- SEP 理论: **5 项**
-- 学术论文: **5 项**
-- 数学公式: **8 个**（含高级计算 7 个）
-- 版本号: 8.7.314 → 8.7.315
+- SEP 理论条目：5 项（全部 200 OK）
+- 学术论文：PubMed 搜索结果 ~650+ 条，精选引用 13 篇
+- 数学公式：8 个
+- 高级计算：7 个

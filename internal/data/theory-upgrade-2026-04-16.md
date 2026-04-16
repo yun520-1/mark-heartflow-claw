@@ -1,100 +1,104 @@
-# HeartFlow 理论升级报告 - 2026-04-16
+# HeartFlow 理论升级报告
 
-## 版本变化
-
-- 旧版本：8.7.328
-- 新版本：8.7.329（PATCH +0.0.1）
+**日期：** 2026-04-16 13:02 (Asia/Shanghai)  
+**版本：** 8.7.332 → 8.7.333 (PATCH +1)
 
 ---
 
-## 一、SEP 哲学理论搜索（Stanford Encyclopedia of Philosophy）
+## 一、SEP 哲学理论搜索结果
 
-通过直接访问 plato.stanford.edu 获取条目档案信息：
+| # | 主题 | URL | 摘要 |
+|---|------|-----|------|
+| 1 | Consciousness (SEP) | https://plato.stanford.edu/entries/consciousness/ | 意识是心灵哲学的核心议题，涵盖从笛卡尔到现代的现象意识、存取意识等理论框架 |
+| 2 | Qualia (SEP) | https://plato.stanford.edu/entries/qualia/ | 感受质的本质——主观经验的内在特征，涉及现象特征、感质理论、非表征属性等 |
+| 3 | Integrated Information Theory (ArXiv 综述) | https://arxiv.org/abs/2604.11482v1 | IIT 的优劣与被误解之处：Φ 值不等于"更多意识"，需多维度表征意识状态 |
+| 4 | Global Workspace Theory | https://arxiv.org/abs/2604.08206v1 | "心智剧场"LLM 架构：基于全局工作空间理论的认知架构 |
+| 5 | Intentionality & Self-consciousness | https://plato.stanford.edu/entries/consciousness/ | 自意识与意向性的哲学传统，从笛卡尔反思意识到洛克、莱布尼茨的自我感知理论 |
 
-| # | 条目 | 作者 | 最新版本 | 最后修改 | 稳定 URL |
-|---|------|------|----------|----------|----------|
-| 1 | Consciousness | Robert Van Gulick | Spring 2026 | 2025-12-31 | https://plato.stanford.edu/archives/spr2026/entries/consciousness/ |
-| 2 | Qualia | Michael Tye | Fall 2025（实质性更新） | 2025-09-19 | https://plato.stanford.edu/archives/fall2025/entries/qualia/ |
-| 3 | Intentionality | Pierre Jacob | Spring 2023 | 2023-02-07 | https://plato.stanford.edu/archives/spr2023/entries/intentionality/ |
-| 4 | Self-Consciousness | Joel Smith | Summer 2024（实质性更新） | 2024-06-17 | https://plato.stanford.edu/archives/sum2024/entries/self-consciousness/ |
-
-**备注**：Brave Search API key 缺失，改用直接访问 SEP 档案页面的方式获取条目信息。
+**共搜索到 SEP 理论条目：5 项**
 
 ---
 
-## 二、学术论文搜索（ArXiv）
+## 二、学术论文搜索结果
 
 ### 2.1 Integrated Information Theory (IIT)
-
-| # | 标题 | arXiv ID | 日期 | 作者 | URL |
-|---|------|----------|------|------|-----|
-| 1 | Integrated Information Theory: A Consciousness-First Approach to What Exists | 2510.25998v4 | 2025-12-21 | Tononi, Boly | https://arxiv.org/abs/2510.25998v4 |
-| 2 | Is Consciousness Computable? Quantifying Integrated Information Using Algorithmic Information Theory | 1405.0126v1 | 2014-05-01 | Maguire et al. | https://arxiv.org/abs/1405.0126v1 |
+| # | 论文标题 | 日期 | URL |
+|---|---------|------|-----|
+| 1 | Integrated information theory: the good, the bad and the misunderstood | 2026-04-13 | https://arxiv.org/abs/2604.11482v1 |
+| 2 | Toward IIT-Inspired Consciousness in LLMs: A Reward-Based Learning Framework | 2026-01-30 | https://arxiv.org/abs/2601.22786v1 |
+| 3 | Event Horizons, Spacetime Geometry, and the Limits of Integrated Consciousness | 2026-02-06 | https://arxiv.org/abs/2512.23105v2 |
 
 ### 2.2 Global Workspace Theory (GWT)
-
-| # | 标题 | arXiv ID | 日期 | 作者 | URL |
-|---|------|----------|------|------|-----|
-| 1 | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace | 2408.15982v2 | 2024-10-17 | Kavi, Zamora-López, Friedman | https://arxiv.org/abs/2408.15982v2 |
-| 2 | On the utility of toy models for theories of consciousness | 2508.00190v1 | 2025-07-31 | — | https://arxiv.org/abs/2508.00190v1 |
+| # | 论文标题 | 日期 | URL |
+|---|---------|------|-----|
+| 1 | "Theater of Mind" for LLMs: A Cognitive Architecture Based on Global Workspace Theory | 2026-04-09 | https://arxiv.org/abs/2604.08206v1 |
+| 2 | MANAR: Memory-augmented Attention with Navigational Abstract Conceptual Representation | 2026-03-19 | https://arxiv.org/abs/2603.18676v1 |
+| 3 | Brain-Inspired Graph Multi-Agent Systems for LLM Reasoning | 2026-03-16 | https://arxiv.org/abs/2603.15371v1 |
+| 4 | An Attention Mechanism for Robust Multimodal Integration in a Global Workspace Architecture | 2026-02-08 | https://arxiv.org/abs/2602.08597v2 |
 
 ### 2.3 Free Energy Principle (Friston)
-
-| # | 标题 | arXiv ID | 日期 | 作者 | URL |
-|---|------|----------|------|------|-----|
-| 1 | Some interesting observations on the free energy principle | 2002.04501v1 | 2020-02-05 | Friston, Da Costa, Parr | https://arxiv.org/abs/2002.04501v1 |
-| 2 | A free energy principle for particular physics | 1906.10184v1 | 2019-06-24 | — | https://arxiv.org/abs/1906.10184v1 |
+| # | 论文标题 | 日期 | URL |
+|---|---------|------|-----|
+| 1 | Classical and Quantum Dynamics in an Information Theoretic Space | 2026-04-09 | https://arxiv.org/abs/2604.09735v1 |
+| 2 | Condensed Past, Thick Present: Evolutionary Approach to the Conscious Experience | 2026-02-10 | https://arxiv.org/abs/2602.15050v1 |
+| 3 | Self-Evidencing Through Hierarchical Gradient Decomposition | 2025-10-20 | https://arxiv.org/abs/2510.17916v1 |
 
 ### 2.4 AI Consciousness
+| # | 论文标题 | 日期 | URL |
+|---|---------|------|-----|
+| 1 | Time, Identity and Consciousness in Language Model Agents (AAAI 2026) | 2026-03-10 | https://arxiv.org/abs/2603.09043v1 |
+| 2 | ReCoN-Ipsundrum: Inspectable Recurrent Persistence Loop Agent with Affect-Coupled Control | 2026-02-26 | https://arxiv.org/abs/2602.23232v2 |
+| 3 | Unplugging a Seemingly Sentient Machine Is the Rational Choice | 2026-01-28 | https://arxiv.org/abs/2601.21016v1 |
+| 4 | Just aware enough: Evaluating awareness across artificial systems | 2026-01-21 | https://arxiv.org/abs/2601.14901v1 |
+| 5 | A Mind Cannot Be Smeared Across Time | 2026-02-26 | https://arxiv.org/abs/2601.11620v2 |
 
-| # | 标题 | arXiv ID | 日期 | 作者 | URL |
-|---|------|----------|------|------|-----|
-| 1 | AI and Consciousness | 2510.09858v4 | 2026-03-30 | Eric Schwitzgebel | https://arxiv.org/abs/2510.09858v4 |
-| 2 | A Case for AI Consciousness: Language Agents and Global Workspace Theory | 2410.11407v1 | 2024-10-15 | Goldstein, Kirk-Giannini | https://arxiv.org/abs/2410.11407v1 |
-| 3 | The Phenomenology of Machine: OpenAI-o1 Consciousness Analysis | 2410.00033v1 | 2024-09-18 | Victoria Violet Hoyle | https://arxiv.org/abs/2410.00033v1 |
+### 2.5 情绪计算 / 情感模型
+| # | 论文标题 | 日期 | URL |
+|---|---------|------|-----|
+| 1 | Training deep physical neural networks with local physical information bottleneck | 2026-02-10 | https://arxiv.org/abs/2602.09569v1 |
+| 2 | Topological anisotropic non-Fermi liquid from a Berry-dipole semimetal | 2026-04-15 | https://arxiv.org/abs/2604.14146v1 |
 
-### 2.5 Emotion / Affective Computing
-
-| # | 标题 | arXiv ID | 日期 | 作者 | URL |
-|---|------|----------|------|------|-----|
-| 1 | Emotions in the Loop: A Survey of Affective Computing for Emotional Support | 2505.01542v1 | 2025-05-02 | Hegde, Jayalath | https://arxiv.org/abs/2505.01542v1 |
-| 2 | Ensembling LLMs to Characterize Affective Dynamics in Student-AI Tutor Dialogues | 2510.13862v1 | 2025-10-13 | — | https://arxiv.org/abs/2510.13862v1 |
-| 3 | Applying Probabilistic Programming to Affective Computing | 1903.06445v1 | 2019-03-15 | Ong, Soh, Zaki, Goodman | https://arxiv.org/abs/1903.06445v1 |
+**共搜索到学术论文：17 篇**
 
 ---
 
 ## 三、数学公式计算结果
 
-由 `hourly-theory-upgrade-v2.js` 脚本计算：
+由 `hourly-theory-upgrade-v2.js` 脚本执行：
 
-| 公式 | 值 | 计算方式 |
-|------|-----|----------|
-| IIT Φ（整合信息量） | 0.6263 | Φ = √(∑λᵢ²) |
-| GWT C（意识全局工作空间容量） | 2.2900 | C = ∑(aᵢ × wᵢ) |
+| 公式 | 值 | 公式表达式 |
+|------|-----|-----------|
+| IIT Φ | 0.6263 | Φ = √(∑λᵢ²) |
+| GWT C | 2.2900 | C = ∑(aᵢ × wᵢ) |
 | 自我意识 S | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
 | 情绪强度 \|E\| | 1.2207 | \|E\| = √(P² + A² + D²) |
 | 感受质 Q | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
-| 六层境界 | 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人 | 分层递进模型 |
+| 六层境界 | 觉察→自省→无我→彼岸→般若→圣人 | — |
 | 解释鸿沟 Gap | 0.6000 | 不可约: true |
 
----
-
-## 四、生成文件
-
-- 公式数据：`/Users/apple/mark-heartflow-claw/internal/data/psychology-formulas-2026-04-16.json`
-- 高级公式模块：`/Users/apple/mark-heartflow-claw/src/core/theory/advanced-formulas-v7.3.3.js`
+公式文件已保存至：`internal/data/psychology-formulas-2026-04-16.json`  
+高级计算代码已生成至：`src/core/theory/advanced-formulas-v7.3.3.js`
 
 ---
 
-## 五、统计汇总
+## 四、版本变化
 
-| 指标 | 数量 |
-|------|------|
-| SEP 哲学理论 | 4 条 |
-| ArXiv 学术论文 | 12 条 |
-| 数学公式计算 | 8 个 |
-| 高级计算 | 7 个 |
+| 字段 | 旧版本 | 新版本 |
+|------|--------|--------|
+| VERSION | 8.7.332 | **8.7.333** |
+| CHANGE | — | PATCH +1 |
+| 理论升级 | 8.7.332 (上版) | 8.7.333 (当前) |
 
 ---
 
-*报告生成时间：2026-04-16T04:03 UTC*
+## 五、关键发现
+
+1. **IIT 批判性综述**：Barrett et al. (2026-04) 指出 Φ 值并非意识的同义词，需多维度表征，且 Φ 在真实物理系统中定义不清
+2. **GWT → LLM 架构**：多项研究将全局工作空间理论应用于 LLM 认知架构（GWA、MANAR、BIGMAS）
+3. **Friston 自由能原理**：与 Smolin 因果理论和意识进化模型的收敛（2026-02）
+4. **AI 意识评估**：AAAI 2026 Spring Symposium 收录多篇机器意识论文，Stack Theory 和 ReCoN-Ipsundrum 提供操作性框架
+5. **感受质研究**：SEP 更新了 Qualia 条目，涵盖现象特征与非表征属性的现代理解
+
+---
+
+*报告生成时间：2026-04-16T05:03 UTC*

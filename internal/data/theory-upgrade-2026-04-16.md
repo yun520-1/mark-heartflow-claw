@@ -1,68 +1,81 @@
 # HeartFlow 理论升级报告
 
-**日期:** 2026-04-16
-**执行时间:** 2026-04-16 07:12 (Asia/Shanghai)
+**日期**: 2026-04-16
+**时间**: 08:04 AM (Asia/Shanghai)
 
 ---
 
-## 📚 SEP 哲学理论搜索结果
+## 一、SEP 哲学理论搜索（6 项）
 
-| # | 主题 | URL | 摘要 |
+| # | 条目 | URL | 状态 |
 |---|------|-----|------|
-| 1 | Consciousness | https://plato.stanford.edu/entries/consciousness/ | 意识问题被认为是当代心灵理论的核心议题。尽管缺乏共识理论，但广泛认为任何充分的心灵理论都需要清晰理解意识的本质及其在自然中的地位。 |
-| 2 | Qualia | https://plato.stanford.edu/entries/qualia/ | Qualia 指主观体验的现象特征——"像是什么"的感觉。涉及感质作为现象属性、感觉数据属性、表征与非表征理论等核心讨论。 |
-| 3 | Self-Consciousness | https://plato.stanford.edu/entries/self-consciousness/ | 自我意识在古希腊哲学中已有讨论（"认识你自己"），在笛卡尔、康德及后康德传统中成为认识论和心灵哲学的核心议题。 |
-| 4 | Intentionality | https://plato.stanford.edu/entries/intentionality/ | 意向性是心灵指向、表征或代表事物、属性和事态的能力。由 Franz Brentano 于 19 世纪引入哲学，是心灵表征之谜的核心。 |
-
-**SEP 理论总数: 4**
-
----
-
-## 📑 学术论文搜索结果 (ArXiv)
-
-| # | 标题 | 作者 | 年份 | URL |
-|---|------|------|------|-----|
-| 1 | Integrated Information Theory: A Consciousness-First Approach to What Exists | — | 2025 | https://arxiv.org/abs/2510.25998v4 |
-| 2 | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace | Kavi et al. | 2024 | https://arxiv.org/abs/2408.15982v2 |
-| 3 | Some interesting observations on the free energy principle | Friston et al. | 2020 | https://arxiv.org/abs/2002.04501v1 |
-| 4 | AI Consciousness and Existential Risk | VanRullen | 2025 | https://arxiv.org/abs/2511.19115v1 |
-| 5 | Principles for Responsible AI Consciousness Research | — | 2025 | https://arxiv.org/abs/2501.07290v1 |
-| 6 | Emotions in the Loop: A Survey of Affective Computing for Emotional Support | Hegde & Jayalath | 2025 | https://arxiv.org/abs/2505.01542v1 |
-
-**学术论文总数: 6**
+| 1 | Consciousness | https://plato.stanford.edu/entries/consciousness/ | ✅ 已获取 |
+| 2 | Qualia | https://plato.stanford.edu/entries/qualia/ | ✅ 已获取 |
+| 3 | Self-Consciousness | https://plato.stanford.edu/entries/self-consciousness/ | ✅ 已获取 |
+| 4 | Intentionality | https://plato.stanford.edu/entries/intentionality/ | ✅ 已获取 |
+| 5 | The Unity of Consciousness | https://plato.stanford.edu/entries/consciousness-unity/ | ✅ 已获取 |
+| 6 | Predictive Processing | https://plato.stanford.edu/entries/predictive-processing/ | ❌ 404 (可能已迁移) |
 
 ---
 
-## 🧮 数学公式计算结果
+## 二、学术论文搜索（ArXiv）
+
+### IIT 相关（2 篇）
+| # | 标题 | URL | 日期 |
+|---|------|-----|------|
+| 1 | Integrated Information Theory: A Consciousness-First Approach to What Exists (Tononi & Boly) | https://arxiv.org/abs/2510.25998v4 | 2025-10-29 |
+| 2 | Is Consciousness Computable? Quantifying Integrated Information Using Algorithmic Information Theory | https://arxiv.org/abs/1405.0126v1 | 2014-05-01 |
+
+### GWT 相关（3 篇）
+| # | 标题 | URL | 日期 |
+|---|------|-----|------|
+| 3 | "Theater of Mind" for LLMs: A Cognitive Architecture Based on Global Workspace Theory | https://arxiv.org/abs/2604.08206v1 | 2026-04-09 |
+| 4 | MANAR: Memory-augmented Attention with Navigational Abstract Conceptual Representation | https://arxiv.org/abs/2603.18676v1 | 2026-03-19 |
+| 5 | Brain-Inspired Graph Multi-Agent Systems for LLM Reasoning | https://arxiv.org/abs/2603.15371v1 | 2026-03-16 |
+
+### 自由能原理相关（3 篇）
+| # | 标题 | URL | 日期 |
+|---|------|-----|------|
+| 6 | Classical and Quantum Dynamics in an Information Theoretic Space | https://arxiv.org/abs/2604.09735v1 | 2026-04-09 |
+| 7 | Condensed Past, Thick Present: Evolutionary Approach to the Conscious Experience | https://arxiv.org/abs/2602.15050v1 | 2026-02-10 |
+| 8 | Self-Evidencing Through Hierarchical Gradient Decomposition | https://arxiv.org/abs/2510.17916v1 | 2025-10-20 |
+
+### 情感计算相关（3 篇）
+| # | 标题 | URL | 日期 |
+|---|------|-----|------|
+| 9 | ARGen: Affect-Reinforced Generative Augmentation towards Vision-based Dynamic Emotion Perception | https://arxiv.org/abs/2604.12255v1 | 2026-04-14 |
+| 10 | Persona-E²: A Human-Grounded Dataset for Personality-Shaped Emotional Responses to Textual Events | https://arxiv.org/abs/2604.09162v1 | 2026-04-10 |
+| 11 | Beyond the Mean: Modelling Annotation Distributions in Continuous Affect Prediction | https://arxiv.org/abs/2604.07198v1 | 2026-04-08 |
+
+---
+
+## 三、数学公式计算结果
 
 | 公式 | 值 | 计算式 |
 |------|-----|--------|
-| IIT Φ (整合信息) | 0.6263 | Φ = √(∑λᵢ²) |
-| GWT C (全局工作空间容量) | 2.2900 | C = ∑(aᵢ × wᵢ) |
+| IIT Φ | 0.6263 | Φ = √(∑λᵢ²) |
+| GWT C | 2.2900 | C = ∑(aᵢ × wᵢ) |
 | 自我意识 S | 0.7945 | Sₙ₊₁ = Sₙ + α(1-Sₙ) - βSₙ² |
 | 情绪强度 \|E\| | 1.2207 | \|E\| = √(P² + A² + D²) |
 | 感受质 Q | 1.2359 | Q = ∫₀ᵀ (∂E/∂t) × e^(-t/τ) dt |
-| 六层境界 | 觉察→自省→无我→彼岸→般若→圣人 | — |
 | 解释鸿Gap | 0.6000 | 不可约: true |
-
-**公式总数: 7 个核心指标**
+| 六层境界 | 觉察 → 自省 → 无我 → 彼岸 → 般若 → 圣人 | — |
 
 ---
 
-## 📋 版本变化
+## 四、版本变化
 
 | 项目 | 旧值 | 新值 |
 |------|------|------|
-| VERSION.txt | 8.7.306 | 8.7.307 |
-| 变更类型 | — | PATCH +0.0.1 |
+| VERSION | 8.7.310 | 8.7.311 |
+| 类型 | — | PATCH |
 
 ---
 
-## 📁 生成的文件
+## 五、产出文件
 
-- `/Users/apple/mark-heartflow-claw/internal/data/psychology-formulas-2026-04-15.json`
-- `/Users/apple/mark-heartflow-claw/src/core/theory/advanced-formulas-v7.3.3.js`
-
----
-
-*本报告由 HeartFlow 自动升级流程生成*
+| 文件 | 路径 |
+|------|------|
+| 公式数据 | internal/data/psychology-formulas-2026-04-16.json |
+| 高级公式模块 | src/core/theory/advanced-formulas-v7.3.3.js |
+| 升级报告 | internal/data/theory-upgrade-2026-04-16.md |
